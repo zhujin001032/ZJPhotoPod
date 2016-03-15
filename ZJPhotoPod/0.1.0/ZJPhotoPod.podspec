@@ -16,8 +16,9 @@ Pod::Spec.new do |s|
 #   * Try to keep it short, snappy and to the point.
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
-  s.description      = "拍照支持裁剪，从相册支持多选"
-
+  s.description      = <<-DESC
+拍照，允许编辑裁剪，选择相册时可以多选，默认是单选.
+                        DESC
 
   s.homepage         = "https://github.com/zhujin001032/ZJPhotoPod"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
@@ -29,12 +30,12 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
-  s.source_files = 'Pod/Classes/**/*'
+s.source_files = 'Pod/Classes/**/*.{h,m}'
   s.resource_bundles = {
-    'ZJPhotoPod' => ['Pod/Assets/*.png']
+    'ZJPhotoPod' => ['Pod/Assets/*.png','Pod/Assets/*.xib']
   }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
+  s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end
