@@ -7,16 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C58745216A2B093312EDAB3E4FAB0A7 /* ZJPhotoPod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D2E6F9BC32064431EBA5D9920F06B4AD /* ZJPhotoPod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0E2117E2C4435C7D8E3C175DA38D8FE3 /* ZJPhotoPod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 901C369AFEC278E59808605A28FD8278 /* ZJPhotoPod-dummy.m */; };
+		023FA5DD19EBE3D002373CC0989A4883 /* Overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40270B1116D7B2D060EC88FEFCD6ABA7 /* Overlay@2x.png */; };
+		0CC4B4CE01051C54F3959C68FAD71F4C /* ZJTakePhotoActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7882B551706021776E23304748AC9939 /* ZJTakePhotoActionSheet.m */; };
+		0D3D6921D0445F7C8A22C3DF8003D956 /* ELCAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBF713DBDE3CCD0446449AAD6DD4CE4 /* ELCAsset.m */; };
+		18274418FF2BD0EC23DC57C7EC1B7E4E /* ELCConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438912C6A4DFE89AC0F00056A75CC5A /* ELCConsole.m */; };
 		237A80C3724F317F4DB45FAC89924032 /* ZJPhotoPod.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2AD7E374EAA82B725CF3BF0AF1BFDF13 /* ZJPhotoPod.bundle */; };
+		27380FB52C8018EB6FCBF054CE37D60B /* ELCAssetPickerFilterDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 87A7C82BB6C92D95EF6DE8DBF9182A06 /* ELCAssetPickerFilterDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2BC47E9708E8B10AC61568697FA0BAA5 /* Pods-ZJPhotoPod_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4666748EAB84D057C1D7B7175CDD04 /* Pods-ZJPhotoPod_Tests-dummy.m */; };
-		2C634922E3A40CEE09A2D9DA914E03B2 /* NSString+Print.m in Sources */ = {isa = PBXBuildFile; fileRef = 641FCB2E03DFEE112C4ADEC8755FFF72 /* NSString+Print.m */; };
+		321CC4CF7C2E5D866CEEFF8F58D7A1D1 /* ELCAssetTablePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = C554139D27067B471A0A49A2070A6AF3 /* ELCAssetTablePicker.xib */; };
 		35043AEEA5F3C879B9A06E34C761F5CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
+		37CD5AF945C44AF5A86D032FA3E60136 /* ZJTakePhotoActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 5732D249D0CDEA0533DD270895DBEB2C /* ZJTakePhotoActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B6E0AA68B152BD6B1118DB82E921A22 /* ELCConsole.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADEE8BBFCC71EA370FA1836BDB18CE /* ELCConsole.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E89CC2CDF71678608FD29293182DDCE /* ELCAssetCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E8D0DD06893F809014F7028DBC72C785 /* ELCAssetCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42449C64714118FEEA8AEF9A450C4984 /* ELCOverlayImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E59A96442AC3C4EE6F23DCE11253E39 /* ELCOverlayImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4E058CB001A0CA7D2780C690F892F318 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
 		4E3192BEA46E06CB839B0D4A1AA40E8D /* Pods-ZJPhotoPod_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F85D5C01A9A6D95C17550987D518893 /* Pods-ZJPhotoPod_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4E893E8B3CAB5B7D63A458F9CDB45F00 /* ELCAssetSelectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E09E2A345CD79717689531092740AF0 /* ELCAssetSelectionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4FB606C18DDA1067A13E49711145B45C /* ELCOverlayImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B55C6CB69E0396537328E47F10ECEC75 /* ELCOverlayImageView.m */; };
+		69FA0D9090775D7C428B17499169065A /* ELCAssetTablePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 086538350E45B66EFE8D2022B01BC0A1 /* ELCAssetTablePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7603B3766614904DE3F2A976AAA885FD /* ELCAlbumPickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14EB52269286D1C6F580449EE890CD30 /* ELCAlbumPickerController.xib */; };
+		76AB4D83D866871E3AB318FDEF103BAE /* ELCAssetPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29911744ECA9A9A3C9B3A7A5ADAC50F4 /* ELCAssetPicker.xib */; };
 		827D9D46F125D282CA997E7E2158518B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		C47F12043608349B316C44FD54627BA1 /* NSString+Print.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CAD5404EBA64E46CF85943CE2BE24C9 /* NSString+Print.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8ADD383BD116A64A3C12D9ABA053E672 /* ZJPhotoPod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CD8FE01588D5030D70B6F9EE858349E /* ZJPhotoPod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8BF515FDA684A747FE67E50A63D350DF /* ELCImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C1E5CDA676F89D245E8B457166BC01B /* ELCImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		90B76082B4207E6E5429199985768828 /* OverlaySelectHighlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57E4D38411A514C897E459975798E158 /* OverlaySelectHighlight@2x.png */; };
+		980F172E070F00B5A84436837349EF5C /* ELCAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = D77A6B3930690B8ED373F4FB396FFAF2 /* ELCAsset.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1BB421EF192DB52E0740106815E31F7 /* ELCAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 493C87EEB44034383535856A908B6DED /* ELCAssetCell.m */; };
+		A63FB3F3FF1B45E42064E973E33EA5AA /* ZJPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = B6F33DE92952FB82E9407E779BE369D6 /* ZJPhoto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A9CED00805F2839E85FC3B16FC54FB2D /* ELCAlbumPickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = DE69A546982B8F8392B765B2A702F94B /* ELCAlbumPickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AFDE080B30031E6763ECA2D2E6D85B76 /* ELCAlbumPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE70A35C188410E60BC2E54D6420DF8 /* ELCAlbumPickerController.m */; };
+		B56E2AAEFF1BCE450E011D28780C1C79 /* ELCImagePickerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E956CF6DE1271DDFFF3D3E3279582739 /* ELCImagePickerHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BA24BA624D92A7BA7E99F182C54E5885 /* ELCAssetTablePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98C96A2537B3EF7B61E7B7CF5192FC /* ELCAssetTablePicker.m */; };
+		C3D7DD00CBF2E81F6F589DAA8A9207C3 /* ELCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F46B884519472C9355622C56600A9B /* ELCImagePickerController.m */; };
+		CE7A2E8939251F2E6B7C826CBA68FB7D /* ZJPhotoPod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9970F021939E1758E81AE84F6B0568F /* ZJPhotoPod-dummy.m */; };
+		D64BB80A9B91C45102BAE55AC3114011 /* OverlaySelectNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C44721E93CC6676D929EFEB45D157A8 /* OverlaySelectNormal@2x.png */; };
 		E6DAD0DAADBDF5522739AE947B555468 /* Pods-ZJPhotoPod_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 124403A0F1FACB31A618FA6BD26FFED8 /* Pods-ZJPhotoPod_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FDB2B2C15A54531464742B94D3D6935E /* Pods-ZJPhotoPod_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 006CCBA222774C19C1DBF08D3D77CF21 /* Pods-ZJPhotoPod_Example-dummy.m */; };
 /* End PBXBuildFile section */
@@ -48,38 +72,62 @@
 /* Begin PBXFileReference section */
 		006CCBA222774C19C1DBF08D3D77CF21 /* Pods-ZJPhotoPod_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZJPhotoPod_Example-dummy.m"; sourceTree = "<group>"; };
 		015B7EB715FB5F0311200CD14F848740 /* Pods-ZJPhotoPod_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ZJPhotoPod_Tests.modulemap"; sourceTree = "<group>"; };
-		0599BA4D2404F27D2A3355263870B269 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0438912C6A4DFE89AC0F00056A75CC5A /* ELCConsole.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELCConsole.m; sourceTree = "<group>"; };
 		071E5352312DAE533072E03E67AE0E97 /* Pods-ZJPhotoPod_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZJPhotoPod_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		086538350E45B66EFE8D2022B01BC0A1 /* ELCAssetTablePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELCAssetTablePicker.h; sourceTree = "<group>"; };
 		0A2F0E09C57AF8A97A6FBE98DA187B41 /* Pods_ZJPhotoPod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJPhotoPod_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		124403A0F1FACB31A618FA6BD26FFED8 /* Pods-ZJPhotoPod_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZJPhotoPod_Example-umbrella.h"; sourceTree = "<group>"; };
-		1519BE0A99AF45A9834F260B7CA5B7ED /* ZJPhotoPod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZJPhotoPod.xcconfig; sourceTree = "<group>"; };
+		14EB52269286D1C6F580449EE890CD30 /* ELCAlbumPickerController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ELCAlbumPickerController.xib; sourceTree = "<group>"; };
+		1EE2827CD27679DF2425754E8AF37212 /* ZJPhotoPod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZJPhotoPod.xcconfig; sourceTree = "<group>"; };
+		25F46B884519472C9355622C56600A9B /* ELCImagePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELCImagePickerController.m; sourceTree = "<group>"; };
+		29911744ECA9A9A3C9B3A7A5ADAC50F4 /* ELCAssetPicker.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ELCAssetPicker.xib; sourceTree = "<group>"; };
 		2AD7E374EAA82B725CF3BF0AF1BFDF13 /* ZJPhotoPod.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJPhotoPod.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		2CE17367FDEC34BC215D530AB08587FA /* Pods-ZJPhotoPod_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJPhotoPod_Example-frameworks.sh"; sourceTree = "<group>"; };
 		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		40270B1116D7B2D060EC88FEFCD6ABA7 /* Overlay@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Overlay@2x.png"; sourceTree = "<group>"; };
 		41B04BE55AD6CB873CE85F4B9E269B80 /* Pods-ZJPhotoPod_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ZJPhotoPod_Example.modulemap"; sourceTree = "<group>"; };
+		445A2206898CBBF2EEE1DF821DE8566A /* ZJPhotoPod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ZJPhotoPod.modulemap; sourceTree = "<group>"; };
+		493C87EEB44034383535856A908B6DED /* ELCAssetCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELCAssetCell.m; sourceTree = "<group>"; };
 		4FD24EDDCB0DBBD141D5AB5637339112 /* Pods-ZJPhotoPod_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJPhotoPod_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5732D249D0CDEA0533DD270895DBEB2C /* ZJTakePhotoActionSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZJTakePhotoActionSheet.h; sourceTree = "<group>"; };
+		57E4D38411A514C897E459975798E158 /* OverlaySelectHighlight@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "OverlaySelectHighlight@2x.png"; sourceTree = "<group>"; };
 		5D90B48977C243DE7385540FCB560C00 /* Pods-ZJPhotoPod_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZJPhotoPod_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5FAB22A035653ABA09228B099EB0B4E2 /* Pods-ZJPhotoPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJPhotoPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		641FCB2E03DFEE112C4ADEC8755FFF72 /* NSString+Print.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSString+Print.m"; sourceTree = "<group>"; };
 		6F85D5C01A9A6D95C17550987D518893 /* Pods-ZJPhotoPod_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZJPhotoPod_Tests-umbrella.h"; sourceTree = "<group>"; };
+		7882B551706021776E23304748AC9939 /* ZJTakePhotoActionSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZJTakePhotoActionSheet.m; sourceTree = "<group>"; };
+		7C1E5CDA676F89D245E8B457166BC01B /* ELCImagePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELCImagePickerController.h; sourceTree = "<group>"; };
+		7C44721E93CC6676D929EFEB45D157A8 /* OverlaySelectNormal@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "OverlaySelectNormal@2x.png"; sourceTree = "<group>"; };
 		7CB7DF0C4084F7ECF41ADA7050BB4F36 /* Pods-ZJPhotoPod_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZJPhotoPod_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7CBF713DBDE3CCD0446449AAD6DD4CE4 /* ELCAsset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELCAsset.m; sourceTree = "<group>"; };
+		7E59A96442AC3C4EE6F23DCE11253E39 /* ELCOverlayImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELCOverlayImageView.h; sourceTree = "<group>"; };
+		84ADEE8BBFCC71EA370FA1836BDB18CE /* ELCConsole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELCConsole.h; sourceTree = "<group>"; };
+		87A7C82BB6C92D95EF6DE8DBF9182A06 /* ELCAssetPickerFilterDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELCAssetPickerFilterDelegate.h; sourceTree = "<group>"; };
 		890E0555BBC549A87FD1881CE4DE52F6 /* Pods-ZJPhotoPod_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZJPhotoPod_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		8CAD5404EBA64E46CF85943CE2BE24C9 /* NSString+Print.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSString+Print.h"; sourceTree = "<group>"; };
+		8CD8FE01588D5030D70B6F9EE858349E /* ZJPhotoPod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZJPhotoPod-umbrella.h"; sourceTree = "<group>"; };
+		8CEC855EDE2076CFE750CAF5E3730837 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D4666748EAB84D057C1D7B7175CDD04 /* Pods-ZJPhotoPod_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZJPhotoPod_Tests-dummy.m"; sourceTree = "<group>"; };
 		8F839702F4615D48950F404EC8D51BCC /* Pods_ZJPhotoPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJPhotoPod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		901C369AFEC278E59808605A28FD8278 /* ZJPhotoPod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZJPhotoPod-dummy.m"; sourceTree = "<group>"; };
+		9CEC61578627384CD0916497ED4E74FB /* ZJPhotoPod-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZJPhotoPod-prefix.pch"; sourceTree = "<group>"; };
+		9E09E2A345CD79717689531092740AF0 /* ELCAssetSelectionDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELCAssetSelectionDelegate.h; sourceTree = "<group>"; };
 		9ED1B1EC9EEC37551FD8BED2CB2C4708 /* Pods-ZJPhotoPod_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJPhotoPod_Example-resources.sh"; sourceTree = "<group>"; };
+		A9970F021939E1758E81AE84F6B0568F /* ZJPhotoPod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZJPhotoPod-dummy.m"; sourceTree = "<group>"; };
+		ACE70A35C188410E60BC2E54D6420DF8 /* ELCAlbumPickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELCAlbumPickerController.m; sourceTree = "<group>"; };
 		B22BC976D862C71A43BAECBCEA640EAE /* ZJPhotoPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZJPhotoPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B55C6CB69E0396537328E47F10ECEC75 /* ELCOverlayImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELCOverlayImageView.m; sourceTree = "<group>"; };
+		B6F33DE92952FB82E9407E779BE369D6 /* ZJPhoto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZJPhoto.h; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BBD005253AEFA34EABF2FB9A1065A569 /* Pods-ZJPhotoPod_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJPhotoPod_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		C554139D27067B471A0A49A2070A6AF3 /* ELCAssetTablePicker.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ELCAssetTablePicker.xib; sourceTree = "<group>"; };
 		D18655C9EB39561E1063F9A8B1A3447F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D2E6F9BC32064431EBA5D9920F06B4AD /* ZJPhotoPod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZJPhotoPod-umbrella.h"; sourceTree = "<group>"; };
 		D472ADD2A0CD76FDF24CC8ED9E9E9560 /* Pods-ZJPhotoPod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJPhotoPod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D7298760DCEFF24BA2A44C7F65D07664 /* ZJPhotoPod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ZJPhotoPod.modulemap; sourceTree = "<group>"; };
+		D77A6B3930690B8ED373F4FB396FFAF2 /* ELCAsset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELCAsset.h; sourceTree = "<group>"; };
+		DE69A546982B8F8392B765B2A702F94B /* ELCAlbumPickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELCAlbumPickerController.h; sourceTree = "<group>"; };
+		E8D0DD06893F809014F7028DBC72C785 /* ELCAssetCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELCAssetCell.h; sourceTree = "<group>"; };
+		E956CF6DE1271DDFFF3D3E3279582739 /* ELCImagePickerHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELCImagePickerHeader.h; sourceTree = "<group>"; };
 		EE1DAF8D24C49C4847CA2B4DB16436AF /* Pods-ZJPhotoPod_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJPhotoPod_Tests-resources.sh"; sourceTree = "<group>"; };
 		F45B795D5C7F25E3A448A254842FBF86 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7B8D3B99A5C46D1F5A2B6F47DB430D2 /* Pods-ZJPhotoPod_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJPhotoPod_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FCAC8ABC9EF9541C226B2F7A6D4B3A6C /* ZJPhotoPod-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZJPhotoPod-prefix.pch"; sourceTree = "<group>"; };
+		FA98C96A2537B3EF7B61E7B7CF5192FC /* ELCAssetTablePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELCAssetTablePicker.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,18 +176,39 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		39C8B423A1994E85EEF62EB85227B083 /* Support Files */ = {
+		1EF3CAE7410508BD689EEF58468E24BD /* ELCImagePicker */ = {
 			isa = PBXGroup;
 			children = (
-				0599BA4D2404F27D2A3355263870B269 /* Info.plist */,
-				D7298760DCEFF24BA2A44C7F65D07664 /* ZJPhotoPod.modulemap */,
-				1519BE0A99AF45A9834F260B7CA5B7ED /* ZJPhotoPod.xcconfig */,
-				901C369AFEC278E59808605A28FD8278 /* ZJPhotoPod-dummy.m */,
-				FCAC8ABC9EF9541C226B2F7A6D4B3A6C /* ZJPhotoPod-prefix.pch */,
-				D2E6F9BC32064431EBA5D9920F06B4AD /* ZJPhotoPod-umbrella.h */,
+				DE69A546982B8F8392B765B2A702F94B /* ELCAlbumPickerController.h */,
+				ACE70A35C188410E60BC2E54D6420DF8 /* ELCAlbumPickerController.m */,
+				D77A6B3930690B8ED373F4FB396FFAF2 /* ELCAsset.h */,
+				7CBF713DBDE3CCD0446449AAD6DD4CE4 /* ELCAsset.m */,
+				E8D0DD06893F809014F7028DBC72C785 /* ELCAssetCell.h */,
+				493C87EEB44034383535856A908B6DED /* ELCAssetCell.m */,
+				87A7C82BB6C92D95EF6DE8DBF9182A06 /* ELCAssetPickerFilterDelegate.h */,
+				9E09E2A345CD79717689531092740AF0 /* ELCAssetSelectionDelegate.h */,
+				086538350E45B66EFE8D2022B01BC0A1 /* ELCAssetTablePicker.h */,
+				FA98C96A2537B3EF7B61E7B7CF5192FC /* ELCAssetTablePicker.m */,
+				84ADEE8BBFCC71EA370FA1836BDB18CE /* ELCConsole.h */,
+				0438912C6A4DFE89AC0F00056A75CC5A /* ELCConsole.m */,
+				7C1E5CDA676F89D245E8B457166BC01B /* ELCImagePickerController.h */,
+				25F46B884519472C9355622C56600A9B /* ELCImagePickerController.m */,
+				E956CF6DE1271DDFFF3D3E3279582739 /* ELCImagePickerHeader.h */,
+				7E59A96442AC3C4EE6F23DCE11253E39 /* ELCOverlayImageView.h */,
+				B55C6CB69E0396537328E47F10ECEC75 /* ELCOverlayImageView.m */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ZJPhotoPod";
+			path = ELCImagePicker;
+			sourceTree = "<group>";
+		};
+		5172A693F605E417CFC154535DA727B4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B6F33DE92952FB82E9407E779BE369D6 /* ZJPhoto.h */,
+				5732D249D0CDEA0533DD270895DBEB2C /* ZJTakePhotoActionSheet.h */,
+				7882B551706021776E23304748AC9939 /* ZJTakePhotoActionSheet.m */,
+				1EF3CAE7410508BD689EEF58468E24BD /* ELCImagePicker */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		61A555781D2BDEF0E8EFA9391D7263C9 /* Targets Support Files */ = {
@@ -151,41 +220,23 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		6434551B18B338FEB952F98DE169FCE6 /* ZJPhotoPod */ = {
-			isa = PBXGroup;
-			children = (
-				72B261387936DF77E740339522B814D6 /* Pod */,
-				39C8B423A1994E85EEF62EB85227B083 /* Support Files */,
-			);
-			name = ZJPhotoPod;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		72B261387936DF77E740339522B814D6 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				DE37793C513DD211BE06C9D1CA473291 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		76AD14B7B75C1943FCE066E2641108EB /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				6434551B18B338FEB952F98DE169FCE6 /* ZJPhotoPod */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				76AD14B7B75C1943FCE066E2641108EB /* Development Pods */,
+				B3296C9966AFF2EC283F499C92C6435D /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				09DA94315ADF4029C863853D81803C71 /* Products */,
 				61A555781D2BDEF0E8EFA9391D7263C9 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		7EF139226ADB31FC4439728C02B2A23C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA1E1C9E3B422454105637FB12F89296 /* Pod */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		9AA28A634B923BE199C3FD7DCEF81D04 /* Pods-ZJPhotoPod_Example */ = {
@@ -206,12 +257,31 @@
 			path = "Target Support Files/Pods-ZJPhotoPod_Example";
 			sourceTree = "<group>";
 		};
+		B3296C9966AFF2EC283F499C92C6435D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BC51D834220C427BB4AA9BB4F40B8E98 /* ZJPhotoPod */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC51D834220C427BB4AA9BB4F40B8E98 /* ZJPhotoPod */ = {
+			isa = PBXGroup;
+			children = (
+				E360225194C57952FB937B60FC5ADA74 /* Pod */,
+				7EF139226ADB31FC4439728C02B2A23C /* Resources */,
+				ED9E46417FEDD963EDE3D6B925ECAB50 /* Support Files */,
+			);
+			name = ZJPhotoPod;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
@@ -240,13 +310,47 @@
 			path = "Target Support Files/Pods-ZJPhotoPod_Tests";
 			sourceTree = "<group>";
 		};
-		DE37793C513DD211BE06C9D1CA473291 /* Classes */ = {
+		E360225194C57952FB937B60FC5ADA74 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				8CAD5404EBA64E46CF85943CE2BE24C9 /* NSString+Print.h */,
-				641FCB2E03DFEE112C4ADEC8755FFF72 /* NSString+Print.m */,
+				5172A693F605E417CFC154535DA727B4 /* Classes */,
 			);
-			path = Classes;
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		E5DDDB4A645F83728FA211F234E44E53 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				14EB52269286D1C6F580449EE890CD30 /* ELCAlbumPickerController.xib */,
+				29911744ECA9A9A3C9B3A7A5ADAC50F4 /* ELCAssetPicker.xib */,
+				C554139D27067B471A0A49A2070A6AF3 /* ELCAssetTablePicker.xib */,
+				40270B1116D7B2D060EC88FEFCD6ABA7 /* Overlay@2x.png */,
+				57E4D38411A514C897E459975798E158 /* OverlaySelectHighlight@2x.png */,
+				7C44721E93CC6676D929EFEB45D157A8 /* OverlaySelectNormal@2x.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		ED9E46417FEDD963EDE3D6B925ECAB50 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8CEC855EDE2076CFE750CAF5E3730837 /* Info.plist */,
+				445A2206898CBBF2EEE1DF821DE8566A /* ZJPhotoPod.modulemap */,
+				1EE2827CD27679DF2425754E8AF37212 /* ZJPhotoPod.xcconfig */,
+				A9970F021939E1758E81AE84F6B0568F /* ZJPhotoPod-dummy.m */,
+				9CEC61578627384CD0916497ED4E74FB /* ZJPhotoPod-prefix.pch */,
+				8CD8FE01588D5030D70B6F9EE858349E /* ZJPhotoPod-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/ZJPhotoPod";
+			sourceTree = "<group>";
+		};
+		FA1E1C9E3B422454105637FB12F89296 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				E5DDDB4A645F83728FA211F234E44E53 /* Assets */,
+			);
+			path = Pod;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,12 +372,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9BDF71E34A5E6946A23F266A76B7E8E2 /* Headers */ = {
+		F9E70EBBA9868ECF1F851E205F8D18C5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C47F12043608349B316C44FD54627BA1 /* NSString+Print.h in Headers */,
-				0C58745216A2B093312EDAB3E4FAB0A7 /* ZJPhotoPod-umbrella.h in Headers */,
+				A9CED00805F2839E85FC3B16FC54FB2D /* ELCAlbumPickerController.h in Headers */,
+				980F172E070F00B5A84436837349EF5C /* ELCAsset.h in Headers */,
+				3E89CC2CDF71678608FD29293182DDCE /* ELCAssetCell.h in Headers */,
+				27380FB52C8018EB6FCBF054CE37D60B /* ELCAssetPickerFilterDelegate.h in Headers */,
+				4E893E8B3CAB5B7D63A458F9CDB45F00 /* ELCAssetSelectionDelegate.h in Headers */,
+				69FA0D9090775D7C428B17499169065A /* ELCAssetTablePicker.h in Headers */,
+				3B6E0AA68B152BD6B1118DB82E921A22 /* ELCConsole.h in Headers */,
+				8BF515FDA684A747FE67E50A63D350DF /* ELCImagePickerController.h in Headers */,
+				B56E2AAEFF1BCE450E011D28780C1C79 /* ELCImagePickerHeader.h in Headers */,
+				42449C64714118FEEA8AEF9A450C4984 /* ELCOverlayImageView.h in Headers */,
+				A63FB3F3FF1B45E42064E973E33EA5AA /* ZJPhoto.h in Headers */,
+				8ADD383BD116A64A3C12D9ABA053E672 /* ZJPhotoPod-umbrella.h in Headers */,
+				37CD5AF945C44AF5A86D032FA3E60136 /* ZJTakePhotoActionSheet.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +419,7 @@
 			buildPhases = (
 				A95EB63A15A03BC8C8364D5A4FFA26EB /* Sources */,
 				883B6FBBC6BF0B9055C25A3A9B64FDCD /* Frameworks */,
-				E50952A8C16F9F7ECD9785B413A0D3E1 /* Resources */,
+				84B554C165305BAE68B8CA1F454BC46D /* Resources */,
 			);
 			buildRules = (
 			);
@@ -337,10 +452,10 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D58FC86C03B2365A594A84A02976490B /* Build configuration list for PBXNativeTarget "ZJPhotoPod" */;
 			buildPhases = (
-				0AC52E46AC6E765A2D336D72C0B8B2DA /* Sources */,
+				9EFAD682C12ABE2FEEE710C9E51ACCC6 /* Sources */,
 				3519C77FDCFA93A9B17764E0EE65BC48 /* Frameworks */,
 				08F01260DA83670CCEEA1446EDBD43FB /* Resources */,
-				9BDF71E34A5E6946A23F266A76B7E8E2 /* Headers */,
+				F9E70EBBA9868ECF1F851E205F8D18C5 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -390,30 +505,43 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E50952A8C16F9F7ECD9785B413A0D3E1 /* Resources */ = {
+		84B554C165305BAE68B8CA1F454BC46D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7603B3766614904DE3F2A976AAA885FD /* ELCAlbumPickerController.xib in Resources */,
+				76AB4D83D866871E3AB318FDEF103BAE /* ELCAssetPicker.xib in Resources */,
+				321CC4CF7C2E5D866CEEFF8F58D7A1D1 /* ELCAssetTablePicker.xib in Resources */,
+				023FA5DD19EBE3D002373CC0989A4883 /* Overlay@2x.png in Resources */,
+				90B76082B4207E6E5429199985768828 /* OverlaySelectHighlight@2x.png in Resources */,
+				D64BB80A9B91C45102BAE55AC3114011 /* OverlaySelectNormal@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0AC52E46AC6E765A2D336D72C0B8B2DA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2C634922E3A40CEE09A2D9DA914E03B2 /* NSString+Print.m in Sources */,
-				0E2117E2C4435C7D8E3C175DA38D8FE3 /* ZJPhotoPod-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		383D9D407B1CC52DA710AA16687D2ABE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				FDB2B2C15A54531464742B94D3D6935E /* Pods-ZJPhotoPod_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9EFAD682C12ABE2FEEE710C9E51ACCC6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AFDE080B30031E6763ECA2D2E6D85B76 /* ELCAlbumPickerController.m in Sources */,
+				0D3D6921D0445F7C8A22C3DF8003D956 /* ELCAsset.m in Sources */,
+				A1BB421EF192DB52E0740106815E31F7 /* ELCAssetCell.m in Sources */,
+				BA24BA624D92A7BA7E99F182C54E5885 /* ELCAssetTablePicker.m in Sources */,
+				18274418FF2BD0EC23DC57C7EC1B7E4E /* ELCConsole.m in Sources */,
+				C3D7DD00CBF2E81F6F589DAA8A9207C3 /* ELCImagePickerController.m in Sources */,
+				4FB606C18DDA1067A13E49711145B45C /* ELCOverlayImageView.m in Sources */,
+				CE7A2E8939251F2E6B7C826CBA68FB7D /* ZJPhotoPod-dummy.m in Sources */,
+				0CC4B4CE01051C54F3959C68FAD71F4C /* ZJTakePhotoActionSheet.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +586,7 @@
 /* Begin XCBuildConfiguration section */
 		011ED84DEDDD69A7B0C6A75E6E6FA18B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1519BE0A99AF45A9834F260B7CA5B7ED /* ZJPhotoPod.xcconfig */;
+			baseConfigurationReference = 1EE2827CD27679DF2425754E8AF37212 /* ZJPhotoPod.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = ZJPhotoPod;
@@ -603,7 +731,7 @@
 		};
 		19E8A32FCD19369BF128ABA2F4928E01 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1519BE0A99AF45A9834F260B7CA5B7ED /* ZJPhotoPod.xcconfig */;
+			baseConfigurationReference = 1EE2827CD27679DF2425754E8AF37212 /* ZJPhotoPod.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = ZJPhotoPod;
@@ -615,7 +743,7 @@
 		};
 		6CAAC34B7D534C6A1AE33CEA099DFF76 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1519BE0A99AF45A9834F260B7CA5B7ED /* ZJPhotoPod.xcconfig */;
+			baseConfigurationReference = 1EE2827CD27679DF2425754E8AF37212 /* ZJPhotoPod.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -702,7 +830,7 @@
 		};
 		D45B94B189158428C600DA58CA38B56C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1519BE0A99AF45A9834F260B7CA5B7ED /* ZJPhotoPod.xcconfig */;
+			baseConfigurationReference = 1EE2827CD27679DF2425754E8AF37212 /* ZJPhotoPod.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;

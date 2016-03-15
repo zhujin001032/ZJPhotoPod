@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'F55CAD626DA876944C29FA27'
+               BlueprintIdentifier = '960261368E2D9FE52D50C222'
                BlueprintName = 'ZJPhotoPod'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'ZJPhotoPod.framework'>

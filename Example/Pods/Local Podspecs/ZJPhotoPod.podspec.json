@@ -2,8 +2,8 @@
   "name": "ZJPhotoPod",
   "version": "0.1.0",
   "summary": "拍照／相册选取图片",
-  "description": "拍照支持裁剪，从相册支持多选",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/ZJPhotoPod",
+  "description": "拍照，允许编辑裁剪，选择相册时可以多选，默认是单选.",
+  "homepage": "https://github.com/zhujin001032/ZJPhotoPod",
   "license": "MIT",
   "authors": {
     "zhujin001032": "zhujin001xb@163.con"
@@ -16,10 +16,12 @@
     "ios": "7.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
+  "source_files": "Pod/Classes/**/*.{h,m}",
   "resource_bundles": {
     "ZJPhotoPod": [
-      "Pod/Assets/*.png"
+      "Pod/Assets/*.png",
+      "Pod/Assets/*.xib"
     ]
-  }
+  },
+  "public_header_files": "Pod/Classes/**/*.h"
 }
