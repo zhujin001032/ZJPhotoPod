@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
   s.description      = "拍照支持裁剪，从相册支持多选"
 
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/ZJPhotoPod"
+  s.homepage         = "https://github.com/zhujin001032/ZJPhotoPod"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "zhujin001032" => "zhujin001xb@163.con" }
