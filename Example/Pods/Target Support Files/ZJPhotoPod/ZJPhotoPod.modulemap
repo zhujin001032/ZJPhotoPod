@@ -1,0 +1,6 @@
+framework module ZJPhotoPod {
+  umbrella header "ZJPhotoPod-umbrella.h"
+
+  export *
+  module * { export * }
+}

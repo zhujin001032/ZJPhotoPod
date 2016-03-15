@@ -7,7 +7,7 @@
 //
 
 #import "ZJViewController.h"
-
+#import <ZJPhotoPod/NSString+Print.h>
 @interface ZJViewController ()
 
 @end
@@ -17,6 +17,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [NSString print];
 	// Do any additional setup after loading the view, typically from a nib.
 }
 

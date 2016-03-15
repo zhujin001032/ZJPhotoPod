@@ -1,0 +1,14 @@
+PODS:
+  - ZJPhotoPod (0.1.0)
+
+DEPENDENCIES:
+  - ZJPhotoPod (from `../`)
+
+EXTERNAL SOURCES:
+  ZJPhotoPod:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ZJPhotoPod: 6dfd8413834e574c784bda7d470c4720cdee6293
+
+COCOAPODS: 0.39.0
