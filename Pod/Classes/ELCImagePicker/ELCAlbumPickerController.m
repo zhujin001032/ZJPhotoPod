@@ -106,10 +106,8 @@
 - (void)reloadTableView
 {
 	[self.tableView reloadData];
-    // Modify by Mark 2015-08-22
-//	[self.navigationItem setTitle:NSLocalizedString(@"Select an Album", nil)];
-    [self.navigationItem setTitle:@"相册"];
-    // End Modify
+	[self.navigationItem setTitle:NSLocalizedString(@"Select an Album", nil)];
+
 }
 
 - (BOOL)shouldSelectAsset:(ELCAsset *)asset previousCount:(NSUInteger)previousCount

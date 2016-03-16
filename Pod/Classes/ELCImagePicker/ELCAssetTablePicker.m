@@ -10,6 +10,7 @@
 #import "ELCAsset.h"
 #import "ELCAlbumPickerController.h"
 #import "ELCConsole.h"
+#define kSCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
 
 @interface ELCAssetTablePicker ()
 
@@ -119,8 +120,8 @@
                                                       animated:NO];
             }
             // Modify by Mark 2015-08-22
-//            [self.navigationItem setTitle:self.singleSelection ? NSLocalizedString(@"Pick Photo", nil) : NSLocalizedString(@"Pick Photos", nil)];
-            [self.navigationItem setTitle:self.singleSelection ? @"选取图片" : @"选取图片"];
+            [self.navigationItem setTitle:self.singleSelection ? NSLocalizedString(@"Pick Photo", nil) : NSLocalizedString(@"Pick Photos", nil)];
+//            [self.navigationItem setTitle:self.singleSelection ? @"选取图片" : @"选取图片"];
             // End Modify
         });
     }
@@ -265,7 +266,7 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-	return 79;
+	return kSCREEN_WIDTH/4.0 - 1;
 }
 
 - (int)totalSelectedAssets

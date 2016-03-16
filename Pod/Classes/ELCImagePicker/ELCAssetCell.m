@@ -9,7 +9,8 @@
 #import "ELCAsset.h"
 #import "ELCConsole.h"
 #import "ELCOverlayImageView.h"
-
+#define kSCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define kWIDTH (kSCREEN_WIDTH - 20 )/4.0
 @interface ELCAssetCell ()
 
 @property (nonatomic, strong) NSArray *rowAssets;
@@ -78,6 +79,9 @@
                 }
    
                 overlayImage = [UIImage imageNamed:@"Overlay" inBundle:resourcesBundle compatibleWithTraitCollection:nil];
+                //图片缩放处理
+                overlayImage = [self reSizeImage:overlayImage toSize:CGSizeMake(kWIDTH, kWIDTH)];
+                
             }
             ELCOverlayImageView *overlayView = [[ELCOverlayImageView alloc] initWithImage:overlayImage];
             [_overlayViewArray addObject:overlayView];
@@ -86,12 +90,35 @@
         }
     }
 }
+/**
+ *  @author Jason He, 16-03-16
+ *
+ *  @brief 图片缩放处理
 
+ *
+ *  @param origImage 原图
+ *  @param reSize    处理后的image
+ *
+ *  @return 返回处理后的Image
+ */
+- (UIImage *)reSizeImage:(UIImage *)origImage toSize:(CGSize)reSize
+{
+    if (origImage.size.width == reSize.width) {
+        return origImage;
+    }
+    
+    UIGraphicsBeginImageContext(reSize);
+    [origImage drawInRect:CGRectMake(0, 0, reSize.width, reSize.height)];
+    UIImage *resImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return resImage;
+    
+}
 - (void)cellTapped:(UITapGestureRecognizer *)tapRecognizer
 {
     CGPoint point = [tapRecognizer locationInView:self];
     int c = (int32_t)self.rowAssets.count;
-    CGFloat totalWidth = c * 75 + (c - 1) * 4;
+    CGFloat totalWidth = c * kWIDTH + (c - 1) * 4;
     CGFloat startX;
     
     if (self.alignmentLeft) {
@@ -100,7 +127,7 @@
         startX = (self.bounds.size.width - totalWidth) / 2;
     }
     
-	CGRect frame = CGRectMake(startX, 2, 75, 75);
+	CGRect frame = CGRectMake(startX, 2, kWIDTH, kWIDTH);
 	
 	for (int i = 0; i < [_rowAssets count]; ++i) {
         if (CGRectContainsPoint(frame, point)) {
@@ -127,7 +154,7 @@
 - (void)layoutSubviews
 {
     int c = (int32_t)self.rowAssets.count;
-    CGFloat totalWidth = c * 75 + (c - 1) * 4;
+    CGFloat totalWidth = c * kWIDTH + (c - 1) * 4;
     CGFloat startX;
     
     if (self.alignmentLeft) {
@@ -136,7 +163,7 @@
         startX = (self.bounds.size.width - totalWidth) / 2;
     }
     
-	CGRect frame = CGRectMake(startX, 2, 75, 75);
+	CGRect frame = CGRectMake(startX, 2, kWIDTH, kWIDTH);
 	
 	for (int i = 0; i < [_rowAssets count]; ++i) {
 		UIImageView *imageView = [_imageViewArray objectAtIndex:i];
