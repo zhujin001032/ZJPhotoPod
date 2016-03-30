@@ -1,909 +1,2565 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		023FA5DD19EBE3D002373CC0989A4883 /* Overlay@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 40270B1116D7B2D060EC88FEFCD6ABA7 /* Overlay@2x.png */; };
-		0CC4B4CE01051C54F3959C68FAD71F4C /* ZJTakePhotoActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 7882B551706021776E23304748AC9939 /* ZJTakePhotoActionSheet.m */; };
-		0D3D6921D0445F7C8A22C3DF8003D956 /* ELCAsset.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CBF713DBDE3CCD0446449AAD6DD4CE4 /* ELCAsset.m */; };
-		18274418FF2BD0EC23DC57C7EC1B7E4E /* ELCConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 0438912C6A4DFE89AC0F00056A75CC5A /* ELCConsole.m */; };
-		237A80C3724F317F4DB45FAC89924032 /* ZJPhotoPod.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2AD7E374EAA82B725CF3BF0AF1BFDF13 /* ZJPhotoPod.bundle */; };
-		27380FB52C8018EB6FCBF054CE37D60B /* ELCAssetPickerFilterDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 87A7C82BB6C92D95EF6DE8DBF9182A06 /* ELCAssetPickerFilterDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BC47E9708E8B10AC61568697FA0BAA5 /* Pods-ZJPhotoPod_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8D4666748EAB84D057C1D7B7175CDD04 /* Pods-ZJPhotoPod_Tests-dummy.m */; };
-		321CC4CF7C2E5D866CEEFF8F58D7A1D1 /* ELCAssetTablePicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = C554139D27067B471A0A49A2070A6AF3 /* ELCAssetTablePicker.xib */; };
-		35043AEEA5F3C879B9A06E34C761F5CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		37CD5AF945C44AF5A86D032FA3E60136 /* ZJTakePhotoActionSheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 5732D249D0CDEA0533DD270895DBEB2C /* ZJTakePhotoActionSheet.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3B6E0AA68B152BD6B1118DB82E921A22 /* ELCConsole.h in Headers */ = {isa = PBXBuildFile; fileRef = 84ADEE8BBFCC71EA370FA1836BDB18CE /* ELCConsole.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3E89CC2CDF71678608FD29293182DDCE /* ELCAssetCell.h in Headers */ = {isa = PBXBuildFile; fileRef = E8D0DD06893F809014F7028DBC72C785 /* ELCAssetCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42449C64714118FEEA8AEF9A450C4984 /* ELCOverlayImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E59A96442AC3C4EE6F23DCE11253E39 /* ELCOverlayImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E058CB001A0CA7D2780C690F892F318 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		4E3192BEA46E06CB839B0D4A1AA40E8D /* Pods-ZJPhotoPod_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F85D5C01A9A6D95C17550987D518893 /* Pods-ZJPhotoPod_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E893E8B3CAB5B7D63A458F9CDB45F00 /* ELCAssetSelectionDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E09E2A345CD79717689531092740AF0 /* ELCAssetSelectionDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4FB606C18DDA1067A13E49711145B45C /* ELCOverlayImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = B55C6CB69E0396537328E47F10ECEC75 /* ELCOverlayImageView.m */; };
-		69FA0D9090775D7C428B17499169065A /* ELCAssetTablePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 086538350E45B66EFE8D2022B01BC0A1 /* ELCAssetTablePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7603B3766614904DE3F2A976AAA885FD /* ELCAlbumPickerController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14EB52269286D1C6F580449EE890CD30 /* ELCAlbumPickerController.xib */; };
-		76AB4D83D866871E3AB318FDEF103BAE /* ELCAssetPicker.xib in Resources */ = {isa = PBXBuildFile; fileRef = 29911744ECA9A9A3C9B3A7A5ADAC50F4 /* ELCAssetPicker.xib */; };
-		827D9D46F125D282CA997E7E2158518B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */; };
-		8ADD383BD116A64A3C12D9ABA053E672 /* ZJPhotoPod-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CD8FE01588D5030D70B6F9EE858349E /* ZJPhotoPod-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8BF515FDA684A747FE67E50A63D350DF /* ELCImagePickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C1E5CDA676F89D245E8B457166BC01B /* ELCImagePickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		90B76082B4207E6E5429199985768828 /* OverlaySelectHighlight@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 57E4D38411A514C897E459975798E158 /* OverlaySelectHighlight@2x.png */; };
-		980F172E070F00B5A84436837349EF5C /* ELCAsset.h in Headers */ = {isa = PBXBuildFile; fileRef = D77A6B3930690B8ED373F4FB396FFAF2 /* ELCAsset.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A1BB421EF192DB52E0740106815E31F7 /* ELCAssetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 493C87EEB44034383535856A908B6DED /* ELCAssetCell.m */; };
-		A63FB3F3FF1B45E42064E973E33EA5AA /* ZJPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = B6F33DE92952FB82E9407E779BE369D6 /* ZJPhoto.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9CED00805F2839E85FC3B16FC54FB2D /* ELCAlbumPickerController.h in Headers */ = {isa = PBXBuildFile; fileRef = DE69A546982B8F8392B765B2A702F94B /* ELCAlbumPickerController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AFDE080B30031E6763ECA2D2E6D85B76 /* ELCAlbumPickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = ACE70A35C188410E60BC2E54D6420DF8 /* ELCAlbumPickerController.m */; };
-		B56E2AAEFF1BCE450E011D28780C1C79 /* ELCImagePickerHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = E956CF6DE1271DDFFF3D3E3279582739 /* ELCImagePickerHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BA24BA624D92A7BA7E99F182C54E5885 /* ELCAssetTablePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = FA98C96A2537B3EF7B61E7B7CF5192FC /* ELCAssetTablePicker.m */; };
-		C3D7DD00CBF2E81F6F589DAA8A9207C3 /* ELCImagePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25F46B884519472C9355622C56600A9B /* ELCImagePickerController.m */; };
-		CE7A2E8939251F2E6B7C826CBA68FB7D /* ZJPhotoPod-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9970F021939E1758E81AE84F6B0568F /* ZJPhotoPod-dummy.m */; };
-		D64BB80A9B91C45102BAE55AC3114011 /* OverlaySelectNormal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7C44721E93CC6676D929EFEB45D157A8 /* OverlaySelectNormal@2x.png */; };
-		E6DAD0DAADBDF5522739AE947B555468 /* Pods-ZJPhotoPod_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 124403A0F1FACB31A618FA6BD26FFED8 /* Pods-ZJPhotoPod_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FDB2B2C15A54531464742B94D3D6935E /* Pods-ZJPhotoPod_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 006CCBA222774C19C1DBF08D3D77CF21 /* Pods-ZJPhotoPod_Example-dummy.m */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		5310E0D27E5B5A81BED80866F8D250AD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6524DC67F079725E6A5EB2C1EFFDAB4F;
-			remoteInfo = "ZJPhotoPod-ZJPhotoPod";
-		};
-		8459D746B6BF3DF6403582CA147A67A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F5A5356285A279008F6C0CD043982F14;
-			remoteInfo = ZJPhotoPod;
-		};
-		C7E5BED0A244D23FB6513FC4AD3BBCBF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F5A5356285A279008F6C0CD043982F14;
-			remoteInfo = ZJPhotoPod;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		006CCBA222774C19C1DBF08D3D77CF21 /* Pods-ZJPhotoPod_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZJPhotoPod_Example-dummy.m"; sourceTree = "<group>"; };
-		015B7EB715FB5F0311200CD14F848740 /* Pods-ZJPhotoPod_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ZJPhotoPod_Tests.modulemap"; sourceTree = "<group>"; };
-		0438912C6A4DFE89AC0F00056A75CC5A /* ELCConsole.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELCConsole.m; sourceTree = "<group>"; };
-		071E5352312DAE533072E03E67AE0E97 /* Pods-ZJPhotoPod_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZJPhotoPod_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		086538350E45B66EFE8D2022B01BC0A1 /* ELCAssetTablePicker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELCAssetTablePicker.h; sourceTree = "<group>"; };
-		0A2F0E09C57AF8A97A6FBE98DA187B41 /* Pods_ZJPhotoPod_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJPhotoPod_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		124403A0F1FACB31A618FA6BD26FFED8 /* Pods-ZJPhotoPod_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZJPhotoPod_Example-umbrella.h"; sourceTree = "<group>"; };
-		14EB52269286D1C6F580449EE890CD30 /* ELCAlbumPickerController.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ELCAlbumPickerController.xib; sourceTree = "<group>"; };
-		1EE2827CD27679DF2425754E8AF37212 /* ZJPhotoPod.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ZJPhotoPod.xcconfig; sourceTree = "<group>"; };
-		25F46B884519472C9355622C56600A9B /* ELCImagePickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELCImagePickerController.m; sourceTree = "<group>"; };
-		29911744ECA9A9A3C9B3A7A5ADAC50F4 /* ELCAssetPicker.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ELCAssetPicker.xib; sourceTree = "<group>"; };
-		2AD7E374EAA82B725CF3BF0AF1BFDF13 /* ZJPhotoPod.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZJPhotoPod.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		2CE17367FDEC34BC215D530AB08587FA /* Pods-ZJPhotoPod_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJPhotoPod_Example-frameworks.sh"; sourceTree = "<group>"; };
-		3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		40270B1116D7B2D060EC88FEFCD6ABA7 /* Overlay@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "Overlay@2x.png"; sourceTree = "<group>"; };
-		41B04BE55AD6CB873CE85F4B9E269B80 /* Pods-ZJPhotoPod_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ZJPhotoPod_Example.modulemap"; sourceTree = "<group>"; };
-		445A2206898CBBF2EEE1DF821DE8566A /* ZJPhotoPod.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ZJPhotoPod.modulemap; sourceTree = "<group>"; };
-		493C87EEB44034383535856A908B6DED /* ELCAssetCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELCAssetCell.m; sourceTree = "<group>"; };
-		4FD24EDDCB0DBBD141D5AB5637339112 /* Pods-ZJPhotoPod_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJPhotoPod_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5732D249D0CDEA0533DD270895DBEB2C /* ZJTakePhotoActionSheet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZJTakePhotoActionSheet.h; sourceTree = "<group>"; };
-		57E4D38411A514C897E459975798E158 /* OverlaySelectHighlight@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "OverlaySelectHighlight@2x.png"; sourceTree = "<group>"; };
-		5D90B48977C243DE7385540FCB560C00 /* Pods-ZJPhotoPod_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZJPhotoPod_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		5FAB22A035653ABA09228B099EB0B4E2 /* Pods-ZJPhotoPod_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJPhotoPod_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		6F85D5C01A9A6D95C17550987D518893 /* Pods-ZJPhotoPod_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ZJPhotoPod_Tests-umbrella.h"; sourceTree = "<group>"; };
-		7882B551706021776E23304748AC9939 /* ZJTakePhotoActionSheet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ZJTakePhotoActionSheet.m; sourceTree = "<group>"; };
-		7C1E5CDA676F89D245E8B457166BC01B /* ELCImagePickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELCImagePickerController.h; sourceTree = "<group>"; };
-		7C44721E93CC6676D929EFEB45D157A8 /* OverlaySelectNormal@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; path = "OverlaySelectNormal@2x.png"; sourceTree = "<group>"; };
-		7CB7DF0C4084F7ECF41ADA7050BB4F36 /* Pods-ZJPhotoPod_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ZJPhotoPod_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		7CBF713DBDE3CCD0446449AAD6DD4CE4 /* ELCAsset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELCAsset.m; sourceTree = "<group>"; };
-		7E59A96442AC3C4EE6F23DCE11253E39 /* ELCOverlayImageView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELCOverlayImageView.h; sourceTree = "<group>"; };
-		84ADEE8BBFCC71EA370FA1836BDB18CE /* ELCConsole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELCConsole.h; sourceTree = "<group>"; };
-		87A7C82BB6C92D95EF6DE8DBF9182A06 /* ELCAssetPickerFilterDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELCAssetPickerFilterDelegate.h; sourceTree = "<group>"; };
-		890E0555BBC549A87FD1881CE4DE52F6 /* Pods-ZJPhotoPod_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ZJPhotoPod_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		8CD8FE01588D5030D70B6F9EE858349E /* ZJPhotoPod-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZJPhotoPod-umbrella.h"; sourceTree = "<group>"; };
-		8CEC855EDE2076CFE750CAF5E3730837 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8D4666748EAB84D057C1D7B7175CDD04 /* Pods-ZJPhotoPod_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ZJPhotoPod_Tests-dummy.m"; sourceTree = "<group>"; };
-		8F839702F4615D48950F404EC8D51BCC /* Pods_ZJPhotoPod_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZJPhotoPod_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CEC61578627384CD0916497ED4E74FB /* ZJPhotoPod-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ZJPhotoPod-prefix.pch"; sourceTree = "<group>"; };
-		9E09E2A345CD79717689531092740AF0 /* ELCAssetSelectionDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELCAssetSelectionDelegate.h; sourceTree = "<group>"; };
-		9ED1B1EC9EEC37551FD8BED2CB2C4708 /* Pods-ZJPhotoPod_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJPhotoPod_Example-resources.sh"; sourceTree = "<group>"; };
-		A9970F021939E1758E81AE84F6B0568F /* ZJPhotoPod-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ZJPhotoPod-dummy.m"; sourceTree = "<group>"; };
-		ACE70A35C188410E60BC2E54D6420DF8 /* ELCAlbumPickerController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELCAlbumPickerController.m; sourceTree = "<group>"; };
-		B22BC976D862C71A43BAECBCEA640EAE /* ZJPhotoPod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZJPhotoPod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B55C6CB69E0396537328E47F10ECEC75 /* ELCOverlayImageView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELCOverlayImageView.m; sourceTree = "<group>"; };
-		B6F33DE92952FB82E9407E779BE369D6 /* ZJPhoto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ZJPhoto.h; sourceTree = "<group>"; };
-		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BBD005253AEFA34EABF2FB9A1065A569 /* Pods-ZJPhotoPod_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJPhotoPod_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		C554139D27067B471A0A49A2070A6AF3 /* ELCAssetTablePicker.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ELCAssetTablePicker.xib; sourceTree = "<group>"; };
-		D18655C9EB39561E1063F9A8B1A3447F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D472ADD2A0CD76FDF24CC8ED9E9E9560 /* Pods-ZJPhotoPod_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJPhotoPod_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		D77A6B3930690B8ED373F4FB396FFAF2 /* ELCAsset.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELCAsset.h; sourceTree = "<group>"; };
-		DE69A546982B8F8392B765B2A702F94B /* ELCAlbumPickerController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELCAlbumPickerController.h; sourceTree = "<group>"; };
-		E8D0DD06893F809014F7028DBC72C785 /* ELCAssetCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELCAssetCell.h; sourceTree = "<group>"; };
-		E956CF6DE1271DDFFF3D3E3279582739 /* ELCImagePickerHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = ELCImagePickerHeader.h; sourceTree = "<group>"; };
-		EE1DAF8D24C49C4847CA2B4DB16436AF /* Pods-ZJPhotoPod_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ZJPhotoPod_Tests-resources.sh"; sourceTree = "<group>"; };
-		F45B795D5C7F25E3A448A254842FBF86 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7B8D3B99A5C46D1F5A2B6F47DB430D2 /* Pods-ZJPhotoPod_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ZJPhotoPod_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		FA98C96A2537B3EF7B61E7B7CF5192FC /* ELCAssetTablePicker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ELCAssetTablePicker.m; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		3519C77FDCFA93A9B17764E0EE65BC48 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				35043AEEA5F3C879B9A06E34C761F5CD /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		3A829AE2DEF3C906E864E1365400E292 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				827D9D46F125D282CA997E7E2158518B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		883B6FBBC6BF0B9055C25A3A9B64FDCD /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F7BE64EC8F0AD0015726C07A5CE88D83 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4E058CB001A0CA7D2780C690F892F318 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		09DA94315ADF4029C863853D81803C71 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				0A2F0E09C57AF8A97A6FBE98DA187B41 /* Pods_ZJPhotoPod_Example.framework */,
-				8F839702F4615D48950F404EC8D51BCC /* Pods_ZJPhotoPod_Tests.framework */,
-				2AD7E374EAA82B725CF3BF0AF1BFDF13 /* ZJPhotoPod.bundle */,
-				B22BC976D862C71A43BAECBCEA640EAE /* ZJPhotoPod.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		1EF3CAE7410508BD689EEF58468E24BD /* ELCImagePicker */ = {
-			isa = PBXGroup;
-			children = (
-				DE69A546982B8F8392B765B2A702F94B /* ELCAlbumPickerController.h */,
-				ACE70A35C188410E60BC2E54D6420DF8 /* ELCAlbumPickerController.m */,
-				D77A6B3930690B8ED373F4FB396FFAF2 /* ELCAsset.h */,
-				7CBF713DBDE3CCD0446449AAD6DD4CE4 /* ELCAsset.m */,
-				E8D0DD06893F809014F7028DBC72C785 /* ELCAssetCell.h */,
-				493C87EEB44034383535856A908B6DED /* ELCAssetCell.m */,
-				87A7C82BB6C92D95EF6DE8DBF9182A06 /* ELCAssetPickerFilterDelegate.h */,
-				9E09E2A345CD79717689531092740AF0 /* ELCAssetSelectionDelegate.h */,
-				086538350E45B66EFE8D2022B01BC0A1 /* ELCAssetTablePicker.h */,
-				FA98C96A2537B3EF7B61E7B7CF5192FC /* ELCAssetTablePicker.m */,
-				84ADEE8BBFCC71EA370FA1836BDB18CE /* ELCConsole.h */,
-				0438912C6A4DFE89AC0F00056A75CC5A /* ELCConsole.m */,
-				7C1E5CDA676F89D245E8B457166BC01B /* ELCImagePickerController.h */,
-				25F46B884519472C9355622C56600A9B /* ELCImagePickerController.m */,
-				E956CF6DE1271DDFFF3D3E3279582739 /* ELCImagePickerHeader.h */,
-				7E59A96442AC3C4EE6F23DCE11253E39 /* ELCOverlayImageView.h */,
-				B55C6CB69E0396537328E47F10ECEC75 /* ELCOverlayImageView.m */,
-			);
-			path = ELCImagePicker;
-			sourceTree = "<group>";
-		};
-		5172A693F605E417CFC154535DA727B4 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				B6F33DE92952FB82E9407E779BE369D6 /* ZJPhoto.h */,
-				5732D249D0CDEA0533DD270895DBEB2C /* ZJTakePhotoActionSheet.h */,
-				7882B551706021776E23304748AC9939 /* ZJTakePhotoActionSheet.m */,
-				1EF3CAE7410508BD689EEF58468E24BD /* ELCImagePicker */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		61A555781D2BDEF0E8EFA9391D7263C9 /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				9AA28A634B923BE199C3FD7DCEF81D04 /* Pods-ZJPhotoPod_Example */,
-				C9BAB94FC52CB4F3A6C8A6092F746854 /* Pods-ZJPhotoPod_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		7DB346D0F39D3F0E887471402A8071AB = {
-			isa = PBXGroup;
-			children = (
-				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				B3296C9966AFF2EC283F499C92C6435D /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				09DA94315ADF4029C863853D81803C71 /* Products */,
-				61A555781D2BDEF0E8EFA9391D7263C9 /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		7EF139226ADB31FC4439728C02B2A23C /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				FA1E1C9E3B422454105637FB12F89296 /* Pod */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		9AA28A634B923BE199C3FD7DCEF81D04 /* Pods-ZJPhotoPod_Example */ = {
-			isa = PBXGroup;
-			children = (
-				D18655C9EB39561E1063F9A8B1A3447F /* Info.plist */,
-				41B04BE55AD6CB873CE85F4B9E269B80 /* Pods-ZJPhotoPod_Example.modulemap */,
-				071E5352312DAE533072E03E67AE0E97 /* Pods-ZJPhotoPod_Example-acknowledgements.markdown */,
-				890E0555BBC549A87FD1881CE4DE52F6 /* Pods-ZJPhotoPod_Example-acknowledgements.plist */,
-				006CCBA222774C19C1DBF08D3D77CF21 /* Pods-ZJPhotoPod_Example-dummy.m */,
-				2CE17367FDEC34BC215D530AB08587FA /* Pods-ZJPhotoPod_Example-frameworks.sh */,
-				9ED1B1EC9EEC37551FD8BED2CB2C4708 /* Pods-ZJPhotoPod_Example-resources.sh */,
-				124403A0F1FACB31A618FA6BD26FFED8 /* Pods-ZJPhotoPod_Example-umbrella.h */,
-				F7B8D3B99A5C46D1F5A2B6F47DB430D2 /* Pods-ZJPhotoPod_Example.debug.xcconfig */,
-				4FD24EDDCB0DBBD141D5AB5637339112 /* Pods-ZJPhotoPod_Example.release.xcconfig */,
-			);
-			name = "Pods-ZJPhotoPod_Example";
-			path = "Target Support Files/Pods-ZJPhotoPod_Example";
-			sourceTree = "<group>";
-		};
-		B3296C9966AFF2EC283F499C92C6435D /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BC51D834220C427BB4AA9BB4F40B8E98 /* ZJPhotoPod */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		BC51D834220C427BB4AA9BB4F40B8E98 /* ZJPhotoPod */ = {
-			isa = PBXGroup;
-			children = (
-				E360225194C57952FB937B60FC5ADA74 /* Pod */,
-				7EF139226ADB31FC4439728C02B2A23C /* Resources */,
-				ED9E46417FEDD963EDE3D6B925ECAB50 /* Support Files */,
-			);
-			name = ZJPhotoPod;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		BF6342C8B29F4CEEA088EFF7AB4DE362 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				3E4E89230EF59BC255123B67864ACF77 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		C9BAB94FC52CB4F3A6C8A6092F746854 /* Pods-ZJPhotoPod_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				F45B795D5C7F25E3A448A254842FBF86 /* Info.plist */,
-				015B7EB715FB5F0311200CD14F848740 /* Pods-ZJPhotoPod_Tests.modulemap */,
-				7CB7DF0C4084F7ECF41ADA7050BB4F36 /* Pods-ZJPhotoPod_Tests-acknowledgements.markdown */,
-				5D90B48977C243DE7385540FCB560C00 /* Pods-ZJPhotoPod_Tests-acknowledgements.plist */,
-				8D4666748EAB84D057C1D7B7175CDD04 /* Pods-ZJPhotoPod_Tests-dummy.m */,
-				BBD005253AEFA34EABF2FB9A1065A569 /* Pods-ZJPhotoPod_Tests-frameworks.sh */,
-				EE1DAF8D24C49C4847CA2B4DB16436AF /* Pods-ZJPhotoPod_Tests-resources.sh */,
-				6F85D5C01A9A6D95C17550987D518893 /* Pods-ZJPhotoPod_Tests-umbrella.h */,
-				D472ADD2A0CD76FDF24CC8ED9E9E9560 /* Pods-ZJPhotoPod_Tests.debug.xcconfig */,
-				5FAB22A035653ABA09228B099EB0B4E2 /* Pods-ZJPhotoPod_Tests.release.xcconfig */,
-			);
-			name = "Pods-ZJPhotoPod_Tests";
-			path = "Target Support Files/Pods-ZJPhotoPod_Tests";
-			sourceTree = "<group>";
-		};
-		E360225194C57952FB937B60FC5ADA74 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				5172A693F605E417CFC154535DA727B4 /* Classes */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-		E5DDDB4A645F83728FA211F234E44E53 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				14EB52269286D1C6F580449EE890CD30 /* ELCAlbumPickerController.xib */,
-				29911744ECA9A9A3C9B3A7A5ADAC50F4 /* ELCAssetPicker.xib */,
-				C554139D27067B471A0A49A2070A6AF3 /* ELCAssetTablePicker.xib */,
-				40270B1116D7B2D060EC88FEFCD6ABA7 /* Overlay@2x.png */,
-				57E4D38411A514C897E459975798E158 /* OverlaySelectHighlight@2x.png */,
-				7C44721E93CC6676D929EFEB45D157A8 /* OverlaySelectNormal@2x.png */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		ED9E46417FEDD963EDE3D6B925ECAB50 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				8CEC855EDE2076CFE750CAF5E3730837 /* Info.plist */,
-				445A2206898CBBF2EEE1DF821DE8566A /* ZJPhotoPod.modulemap */,
-				1EE2827CD27679DF2425754E8AF37212 /* ZJPhotoPod.xcconfig */,
-				A9970F021939E1758E81AE84F6B0568F /* ZJPhotoPod-dummy.m */,
-				9CEC61578627384CD0916497ED4E74FB /* ZJPhotoPod-prefix.pch */,
-				8CD8FE01588D5030D70B6F9EE858349E /* ZJPhotoPod-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/ZJPhotoPod";
-			sourceTree = "<group>";
-		};
-		FA1E1C9E3B422454105637FB12F89296 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				E5DDDB4A645F83728FA211F234E44E53 /* Assets */,
-			);
-			path = Pod;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXHeadersBuildPhase section */
-		06EC12F6A9DC4EC1C56F1E15DBC6821F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4E3192BEA46E06CB839B0D4A1AA40E8D /* Pods-ZJPhotoPod_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		70F17362CEFED5D18CF41A650643FD20 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E6DAD0DAADBDF5522739AE947B555468 /* Pods-ZJPhotoPod_Example-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F9E70EBBA9868ECF1F851E205F8D18C5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				A9CED00805F2839E85FC3B16FC54FB2D /* ELCAlbumPickerController.h in Headers */,
-				980F172E070F00B5A84436837349EF5C /* ELCAsset.h in Headers */,
-				3E89CC2CDF71678608FD29293182DDCE /* ELCAssetCell.h in Headers */,
-				27380FB52C8018EB6FCBF054CE37D60B /* ELCAssetPickerFilterDelegate.h in Headers */,
-				4E893E8B3CAB5B7D63A458F9CDB45F00 /* ELCAssetSelectionDelegate.h in Headers */,
-				69FA0D9090775D7C428B17499169065A /* ELCAssetTablePicker.h in Headers */,
-				3B6E0AA68B152BD6B1118DB82E921A22 /* ELCConsole.h in Headers */,
-				8BF515FDA684A747FE67E50A63D350DF /* ELCImagePickerController.h in Headers */,
-				B56E2AAEFF1BCE450E011D28780C1C79 /* ELCImagePickerHeader.h in Headers */,
-				42449C64714118FEEA8AEF9A450C4984 /* ELCOverlayImageView.h in Headers */,
-				A63FB3F3FF1B45E42064E973E33EA5AA /* ZJPhoto.h in Headers */,
-				8ADD383BD116A64A3C12D9ABA053E672 /* ZJPhotoPod-umbrella.h in Headers */,
-				37CD5AF945C44AF5A86D032FA3E60136 /* ZJTakePhotoActionSheet.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
-
-/* Begin PBXNativeTarget section */
-		3DB8C76CC495C42111EBA79116C41C42 /* Pods-ZJPhotoPod_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B547B46F280C76A2BA9566925AF00A59 /* Build configuration list for PBXNativeTarget "Pods-ZJPhotoPod_Example" */;
-			buildPhases = (
-				383D9D407B1CC52DA710AA16687D2ABE /* Sources */,
-				F7BE64EC8F0AD0015726C07A5CE88D83 /* Frameworks */,
-				70F17362CEFED5D18CF41A650643FD20 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D7D1B0074A722BF9100D375993B85947 /* PBXTargetDependency */,
-			);
-			name = "Pods-ZJPhotoPod_Example";
-			productName = "Pods-ZJPhotoPod_Example";
-			productReference = 0A2F0E09C57AF8A97A6FBE98DA187B41 /* Pods_ZJPhotoPod_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6524DC67F079725E6A5EB2C1EFFDAB4F /* ZJPhotoPod-ZJPhotoPod */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7CC41A6FA1137369F80C3354E9B05C96 /* Build configuration list for PBXNativeTarget "ZJPhotoPod-ZJPhotoPod" */;
-			buildPhases = (
-				A95EB63A15A03BC8C8364D5A4FFA26EB /* Sources */,
-				883B6FBBC6BF0B9055C25A3A9B64FDCD /* Frameworks */,
-				84B554C165305BAE68B8CA1F454BC46D /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "ZJPhotoPod-ZJPhotoPod";
-			productName = "ZJPhotoPod-ZJPhotoPod";
-			productReference = 2AD7E374EAA82B725CF3BF0AF1BFDF13 /* ZJPhotoPod.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
-		EABD4562C1CE8D165A869C89E79B88A3 /* Pods-ZJPhotoPod_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9C1CC68FFA1EECD164A8D8751BA5EEA2 /* Build configuration list for PBXNativeTarget "Pods-ZJPhotoPod_Tests" */;
-			buildPhases = (
-				D4938F8E2FF77E463663EE6431A98144 /* Sources */,
-				3A829AE2DEF3C906E864E1365400E292 /* Frameworks */,
-				06EC12F6A9DC4EC1C56F1E15DBC6821F /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				AA878CA06301CA56012FD34089A6AF55 /* PBXTargetDependency */,
-			);
-			name = "Pods-ZJPhotoPod_Tests";
-			productName = "Pods-ZJPhotoPod_Tests";
-			productReference = 8F839702F4615D48950F404EC8D51BCC /* Pods_ZJPhotoPod_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		F5A5356285A279008F6C0CD043982F14 /* ZJPhotoPod */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D58FC86C03B2365A594A84A02976490B /* Build configuration list for PBXNativeTarget "ZJPhotoPod" */;
-			buildPhases = (
-				9EFAD682C12ABE2FEEE710C9E51ACCC6 /* Sources */,
-				3519C77FDCFA93A9B17764E0EE65BC48 /* Frameworks */,
-				08F01260DA83670CCEEA1446EDBD43FB /* Resources */,
-				F9E70EBBA9868ECF1F851E205F8D18C5 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F149C29B7B6D6D245F9D76F4BFB2F48A /* PBXTargetDependency */,
-			);
-			name = ZJPhotoPod;
-			productName = ZJPhotoPod;
-			productReference = B22BC976D862C71A43BAECBCEA640EAE /* ZJPhotoPod.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastSwiftUpdateCheck = 0700;
-				LastUpgradeCheck = 0700;
-			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 09DA94315ADF4029C863853D81803C71 /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				3DB8C76CC495C42111EBA79116C41C42 /* Pods-ZJPhotoPod_Example */,
-				EABD4562C1CE8D165A869C89E79B88A3 /* Pods-ZJPhotoPod_Tests */,
-				F5A5356285A279008F6C0CD043982F14 /* ZJPhotoPod */,
-				6524DC67F079725E6A5EB2C1EFFDAB4F /* ZJPhotoPod-ZJPhotoPod */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		08F01260DA83670CCEEA1446EDBD43FB /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				237A80C3724F317F4DB45FAC89924032 /* ZJPhotoPod.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		84B554C165305BAE68B8CA1F454BC46D /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7603B3766614904DE3F2A976AAA885FD /* ELCAlbumPickerController.xib in Resources */,
-				76AB4D83D866871E3AB318FDEF103BAE /* ELCAssetPicker.xib in Resources */,
-				321CC4CF7C2E5D866CEEFF8F58D7A1D1 /* ELCAssetTablePicker.xib in Resources */,
-				023FA5DD19EBE3D002373CC0989A4883 /* Overlay@2x.png in Resources */,
-				90B76082B4207E6E5429199985768828 /* OverlaySelectHighlight@2x.png in Resources */,
-				D64BB80A9B91C45102BAE55AC3114011 /* OverlaySelectNormal@2x.png in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		383D9D407B1CC52DA710AA16687D2ABE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FDB2B2C15A54531464742B94D3D6935E /* Pods-ZJPhotoPod_Example-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9EFAD682C12ABE2FEEE710C9E51ACCC6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AFDE080B30031E6763ECA2D2E6D85B76 /* ELCAlbumPickerController.m in Sources */,
-				0D3D6921D0445F7C8A22C3DF8003D956 /* ELCAsset.m in Sources */,
-				A1BB421EF192DB52E0740106815E31F7 /* ELCAssetCell.m in Sources */,
-				BA24BA624D92A7BA7E99F182C54E5885 /* ELCAssetTablePicker.m in Sources */,
-				18274418FF2BD0EC23DC57C7EC1B7E4E /* ELCConsole.m in Sources */,
-				C3D7DD00CBF2E81F6F589DAA8A9207C3 /* ELCImagePickerController.m in Sources */,
-				4FB606C18DDA1067A13E49711145B45C /* ELCOverlayImageView.m in Sources */,
-				CE7A2E8939251F2E6B7C826CBA68FB7D /* ZJPhotoPod-dummy.m in Sources */,
-				0CC4B4CE01051C54F3959C68FAD71F4C /* ZJTakePhotoActionSheet.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A95EB63A15A03BC8C8364D5A4FFA26EB /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D4938F8E2FF77E463663EE6431A98144 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2BC47E9708E8B10AC61568697FA0BAA5 /* Pods-ZJPhotoPod_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		AA878CA06301CA56012FD34089A6AF55 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ZJPhotoPod;
-			target = F5A5356285A279008F6C0CD043982F14 /* ZJPhotoPod */;
-			targetProxy = 8459D746B6BF3DF6403582CA147A67A0 /* PBXContainerItemProxy */;
-		};
-		D7D1B0074A722BF9100D375993B85947 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ZJPhotoPod;
-			target = F5A5356285A279008F6C0CD043982F14 /* ZJPhotoPod */;
-			targetProxy = C7E5BED0A244D23FB6513FC4AD3BBCBF /* PBXContainerItemProxy */;
-		};
-		F149C29B7B6D6D245F9D76F4BFB2F48A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "ZJPhotoPod-ZJPhotoPod";
-			target = 6524DC67F079725E6A5EB2C1EFFDAB4F /* ZJPhotoPod-ZJPhotoPod */;
-			targetProxy = 5310E0D27E5B5A81BED80866F8D250AD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin XCBuildConfiguration section */
-		011ED84DEDDD69A7B0C6A75E6E6FA18B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EE2827CD27679DF2425754E8AF37212 /* ZJPhotoPod.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = ZJPhotoPod;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-			};
-			name = Debug;
-		};
-		0D20367B105DDF0F49518A56A5EB2F51 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7B8D3B99A5C46D1F5A2B6F47DB430D2 /* Pods-ZJPhotoPod_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ZJPhotoPod_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZJPhotoPod_Example/Pods-ZJPhotoPod_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_ZJPhotoPod_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		16747352E1B350FF14CA3E19C49377B9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D472ADD2A0CD76FDF24CC8ED9E9E9560 /* Pods-ZJPhotoPod_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ZJPhotoPod_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZJPhotoPod_Tests/Pods-ZJPhotoPod_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_ZJPhotoPod_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		19E8A32FCD19369BF128ABA2F4928E01 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EE2827CD27679DF2425754E8AF37212 /* ZJPhotoPod.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = ZJPhotoPod;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		6CAAC34B7D534C6A1AE33CEA099DFF76 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EE2827CD27679DF2425754E8AF37212 /* ZJPhotoPod.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ZJPhotoPod/ZJPhotoPod-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZJPhotoPod/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZJPhotoPod/ZJPhotoPod.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = ZJPhotoPod;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		B9B32DCCA0D788221AB79422E6D12E90 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5FAB22A035653ABA09228B099EB0B4E2 /* Pods-ZJPhotoPod_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ZJPhotoPod_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZJPhotoPod_Tests/Pods-ZJPhotoPod_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_ZJPhotoPod_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BF6E0990EBB6340D68474F2642626243 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4FD24EDDCB0DBBD141D5AB5637339112 /* Pods-ZJPhotoPod_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ZJPhotoPod_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ZJPhotoPod_Example/Pods-ZJPhotoPod_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_ZJPhotoPod_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D45B94B189158428C600DA58CA38B56C /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1EE2827CD27679DF2425754E8AF37212 /* ZJPhotoPod.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ZJPhotoPod/ZJPhotoPod-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ZJPhotoPod/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ZJPhotoPod/ZJPhotoPod.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ZJPhotoPod;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
-				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7CC41A6FA1137369F80C3354E9B05C96 /* Build configuration list for PBXNativeTarget "ZJPhotoPod-ZJPhotoPod" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				011ED84DEDDD69A7B0C6A75E6E6FA18B /* Debug */,
-				19E8A32FCD19369BF128ABA2F4928E01 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9C1CC68FFA1EECD164A8D8751BA5EEA2 /* Build configuration list for PBXNativeTarget "Pods-ZJPhotoPod_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				16747352E1B350FF14CA3E19C49377B9 /* Debug */,
-				B9B32DCCA0D788221AB79422E6D12E90 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B547B46F280C76A2BA9566925AF00A59 /* Build configuration list for PBXNativeTarget "Pods-ZJPhotoPod_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0D20367B105DDF0F49518A56A5EB2F51 /* Debug */,
-				BF6E0990EBB6340D68474F2642626243 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D58FC86C03B2365A594A84A02976490B /* Build configuration list for PBXNativeTarget "ZJPhotoPod" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6CAAC34B7D534C6A1AE33CEA099DFF76 /* Debug */,
-				D45B94B189158428C600DA58CA38B56C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>006CCBA222774C19C1DBF08D3D77CF21</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-ZJPhotoPod_Example-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>011ED84DEDDD69A7B0C6A75E6E6FA18B</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1EE2827CD27679DF2425754E8AF37212</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>ZJPhotoPod</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>013786C483ABE8847A43E42EDC7C78E9</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5DDB8D0B28E40D9D7979AE218DA9E0A2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>015B7EB715FB5F0311200CD14F848740</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-ZJPhotoPod_Tests.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>036F033778565D59CC88F09DA882C176</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ELCAlbumPickerController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>03CA91998D6773EC5D02B3DB87B8353E</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>RELEASE=1</string>
+				</array>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>06EC12F6A9DC4EC1C56F1E15DBC6821F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>4E3192BEA46E06CB839B0D4A1AA40E8D</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>071E5352312DAE533072E03E67AE0E97</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-ZJPhotoPod_Example-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>08F01260DA83670CCEEA1446EDBD43FB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>237A80C3724F317F4DB45FAC89924032</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>09DA94315ADF4029C863853D81803C71</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>0A2F0E09C57AF8A97A6FBE98DA187B41</string>
+				<string>8F839702F4615D48950F404EC8D51BCC</string>
+				<string>2AD7E374EAA82B725CF3BF0AF1BFDF13</string>
+				<string>B22BC976D862C71A43BAECBCEA640EAE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0A12709D27791716E9B90D7109B45AB5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F900CE5F9C68BF713CA0EF123BAD671A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>0A2F0E09C57AF8A97A6FBE98DA187B41</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_ZJPhotoPod_Example.framework</string>
+			<key>path</key>
+			<string>Pods_ZJPhotoPod_Example.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>0B3DF35C258DB596C969F6E843F23DD2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ELCAssetCell.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0B57334D6C23DADAA4F7D802A5760EB2</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>STRIP_INSTALLED_PRODUCT</key>
+				<string>NO</string>
+				<key>SYMROOT</key>
+				<string>${SRCROOT}/../build</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>0D20367B105DDF0F49518A56A5EB2F51</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F7B8D3B99A5C46D1F5A2B6F47DB430D2</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-ZJPhotoPod_Example/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-ZJPhotoPod_Example/Pods-ZJPhotoPod_Example.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_ZJPhotoPod_Example</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>0E300D5413F2EAC90F4A387AFCC02657</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ELCAssetTablePicker.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>0F57BEC7BABB7C8218CC2EED8C53451C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>A9970F021939E1758E81AE84F6B0568F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>124403A0F1FACB31A618FA6BD26FFED8</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-ZJPhotoPod_Example-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>16747352E1B350FF14CA3E19C49377B9</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>D472ADD2A0CD76FDF24CC8ED9E9E9560</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-ZJPhotoPod_Tests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-ZJPhotoPod_Tests/Pods-ZJPhotoPod_Tests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_ZJPhotoPod_Tests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>16B0949E95B1B9AB16BD6EC6A96DEFC5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8E7726DBF279CD438C555F263B0D8F17</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>173A6CD674D63B230C74660ED727FE11</key>
+		<dict>
+			<key>fileRef</key>
+			<string>59BE67DBF3F1FC319C0713A25467DD89</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>19E8A32FCD19369BF128ABA2F4928E01</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1EE2827CD27679DF2425754E8AF37212</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>ZJPhotoPod</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>bundle</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>1AF4C6E44065620CDA99DD7727B97F90</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E3689E73D0C365B0537099D5A8064D60</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>1C755851385BF468E5A7034A22D0E53F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6B25D71FB5B0EA94C2B3504B7F9B5273</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1D5016B071D64F0CE020EC00EBFAB919</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FC974AB33ABC11DD9CA2210332CF7403</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>1EE2827CD27679DF2425754E8AF37212</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>ZJPhotoPod.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>22E4002678C360418C5CB7E686D77B77</key>
+		<dict>
+			<key>fileRef</key>
+			<string>859137A9A88CA06D6CE0611A6FCBE9E4</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>237A80C3724F317F4DB45FAC89924032</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2AD7E374EAA82B725CF3BF0AF1BFDF13</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2647BA50A0A3B5ABF4C777760158CFE0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ELCImagePickerController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2AD7E374EAA82B725CF3BF0AF1BFDF13</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>ZJPhotoPod.bundle</string>
+			<key>path</key>
+			<string>ZJPhotoPod.bundle</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>2BC47E9708E8B10AC61568697FA0BAA5</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8D4666748EAB84D057C1D7B7175CDD04</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>2CE17367FDEC34BC215D530AB08587FA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-ZJPhotoPod_Example-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2D8E8EC45A3A1A1D94AE762CB5028504</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>0B57334D6C23DADAA4F7D802A5760EB2</string>
+				<string>03CA91998D6773EC5D02B3DB87B8353E</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>35043AEEA5F3C879B9A06E34C761F5CD</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3519C77FDCFA93A9B17764E0EE65BC48</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>35043AEEA5F3C879B9A06E34C761F5CD</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>37B3AA6B43072E8DFF321932447B3F82</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ELCAssetTablePicker.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>383D9D407B1CC52DA710AA16687D2ABE</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>FDB2B2C15A54531464742B94D3D6935E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3A829AE2DEF3C906E864E1365400E292</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>827D9D46F125D282CA997E7E2158518B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>3D2C9F1F11653DCFAA63EF8024289CC3</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ELCOverlayImageView.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3DB8C76CC495C42111EBA79116C41C42</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>B547B46F280C76A2BA9566925AF00A59</string>
+			<key>buildPhases</key>
+			<array>
+				<string>383D9D407B1CC52DA710AA16687D2ABE</string>
+				<string>F7BE64EC8F0AD0015726C07A5CE88D83</string>
+				<string>70F17362CEFED5D18CF41A650643FD20</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>D7D1B0074A722BF9100D375993B85947</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-ZJPhotoPod_Example</string>
+			<key>productName</key>
+			<string>Pods-ZJPhotoPod_Example</string>
+			<key>productReference</key>
+			<string>0A2F0E09C57AF8A97A6FBE98DA187B41</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>3E4E89230EF59BC255123B67864ACF77</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>DEVELOPER_DIR</string>
+		</dict>
+		<key>41B04BE55AD6CB873CE85F4B9E269B80</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods-ZJPhotoPod_Example.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>41D63D60F34517288096410F0D0189B8</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>7E9010B04E5DFE4339EC4855D55CAF41</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pod</string>
+			<key>path</key>
+			<string>Pod</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>445A2206898CBBF2EEE1DF821DE8566A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>ZJPhotoPod.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>467692535A1B08AC5B835DFF89F75866</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>OverlaySelectHighlight@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4794E30A37BB1C35E736E382321D44FB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ELCAsset.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4958C5EBCBDFFCA8963060ABD9408E2B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F19288DE3E840DD85133F58F5DC19F2F</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4AA8C31801CD5F7A227D58D905E843BF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ELCAssetPickerFilterDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4E058CB001A0CA7D2780C690F892F318</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>4E3192BEA46E06CB839B0D4A1AA40E8D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6F85D5C01A9A6D95C17550987D518893</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>4F3A5B84F3437CC7C520A0F3223C8AFA</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B222C1A0CF0A61D579FE62C770A1CBD5</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>4F5382E40A153F38FA0BCEAF2B4268BF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ELCConsole.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>4FD24EDDCB0DBBD141D5AB5637339112</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-ZJPhotoPod_Example.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5310E0D27E5B5A81BED80866F8D250AD</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>6524DC67F079725E6A5EB2C1EFFDAB4F</string>
+			<key>remoteInfo</key>
+			<string>ZJPhotoPod-ZJPhotoPod</string>
+		</dict>
+		<key>576E4E44D45FCDF2CF5C6DDAB2D75599</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6264F469AF3375539B2247D5F13D0528</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>58692287EDBB7000A658B2148374DD17</key>
+		<dict>
+			<key>fileRef</key>
+			<string>639872167C9C744DFB85148AFC6C4C06</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>59BE67DBF3F1FC319C0713A25467DD89</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ELCAssetSelectionDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5AE343AE59B9565AEE7EB0525DCA0C16</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ELCAsset.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5D90B48977C243DE7385540FCB560C00</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-ZJPhotoPod_Tests-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5DDB8D0B28E40D9D7979AE218DA9E0A2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Base.lproj</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5FAB22A035653ABA09228B099EB0B4E2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-ZJPhotoPod_Tests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>61A555781D2BDEF0E8EFA9391D7263C9</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9AA28A634B923BE199C3FD7DCEF81D04</string>
+				<string>C9BAB94FC52CB4F3A6C8A6092F746854</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Targets Support Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6264F469AF3375539B2247D5F13D0528</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ELCImagePickerHeader.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>62A9AC8C65CFBD4846221AF461448B84</key>
+		<dict>
+			<key>fileRef</key>
+			<string>37B3AA6B43072E8DFF321932447B3F82</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>639872167C9C744DFB85148AFC6C4C06</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ZJPhoto.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>63F6D51C9375E635FAB6978F5481CAAA</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>013786C483ABE8847A43E42EDC7C78E9</string>
+				<string>16B0949E95B1B9AB16BD6EC6A96DEFC5</string>
+				<string>4958C5EBCBDFFCA8963060ABD9408E2B</string>
+				<string>B5BA91F0123B987872364017BC013E8A</string>
+				<string>A5D18216BFE21E9795BC876F8B3A7510</string>
+				<string>BC6A095FB5726EB733463716CB1E2A90</string>
+				<string>BB93C64A55B9DA7E372140166C325EA7</string>
+				<string>A934E5EE0F03B0B28FA5CEAE51397F24</string>
+				<string>22E4002678C360418C5CB7E686D77B77</string>
+				<string>1C755851385BF468E5A7034A22D0E53F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6524DC67F079725E6A5EB2C1EFFDAB4F</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>7CC41A6FA1137369F80C3354E9B05C96</string>
+			<key>buildPhases</key>
+			<array>
+				<string>A95EB63A15A03BC8C8364D5A4FFA26EB</string>
+				<string>883B6FBBC6BF0B9055C25A3A9B64FDCD</string>
+				<string>63F6D51C9375E635FAB6978F5481CAAA</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>ZJPhotoPod-ZJPhotoPod</string>
+			<key>productName</key>
+			<string>ZJPhotoPod-ZJPhotoPod</string>
+			<key>productReference</key>
+			<string>2AD7E374EAA82B725CF3BF0AF1BFDF13</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle</string>
+		</dict>
+		<key>670F8B7F84F0F7600CDBB8EDB840AD78</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8CD8FE01588D5030D70B6F9EE858349E</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>67E31429E68C254A819956CBBB47A720</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ELCAssetTablePicker.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6B25D71FB5B0EA94C2B3504B7F9B5273</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>zh-Hant.lproj</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6CAAC34B7D534C6A1AE33CEA099DFF76</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1EE2827CD27679DF2425754E8AF37212</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/ZJPhotoPod/ZJPhotoPod-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/ZJPhotoPod/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/ZJPhotoPod/ZJPhotoPod.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>PRODUCT_NAME</key>
+				<string>ZJPhotoPod</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>6CEA66EDD76968BB02E68B785CA2E210</key>
+		<dict>
+			<key>fileRef</key>
+			<string>B266449B01FCA19A9351368B347529C0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6F85D5C01A9A6D95C17550987D518893</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Pods-ZJPhotoPod_Tests-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>70F17362CEFED5D18CF41A650643FD20</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>E6DAD0DAADBDF5522739AE947B555468</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>75B8F07AFF0DAE60495A0B9D2963980C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ELCOverlayImageView.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>776F6448B7C6F4FE406AD234107EB47D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>E8B2C40941A3796FE73CCD9C1396B3A7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>7CB7DF0C4084F7ECF41ADA7050BB4F36</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>path</key>
+			<string>Pods-ZJPhotoPod_Tests-acknowledgements.markdown</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7CC41A6FA1137369F80C3354E9B05C96</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>011ED84DEDDD69A7B0C6A75E6E6FA18B</string>
+				<string>19E8A32FCD19369BF128ABA2F4928E01</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>7DB346D0F39D3F0E887471402A8071AB</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
+				<string>B3296C9966AFF2EC283F499C92C6435D</string>
+				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
+				<string>09DA94315ADF4029C863853D81803C71</string>
+				<string>61A555781D2BDEF0E8EFA9391D7263C9</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7E9010B04E5DFE4339EC4855D55CAF41</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>5DDB8D0B28E40D9D7979AE218DA9E0A2</string>
+				<string>8E7726DBF279CD438C555F263B0D8F17</string>
+				<string>F19288DE3E840DD85133F58F5DC19F2F</string>
+				<string>0E300D5413F2EAC90F4A387AFCC02657</string>
+				<string>FD0C9F4EB56B30C64A640DEC4A85BA96</string>
+				<string>D88184CC68E71C40039FC6766BB9DECA</string>
+				<string>467692535A1B08AC5B835DFF89F75866</string>
+				<string>CA00C2D2FDA39C30AEF5410DE0BCDCD1</string>
+				<string>859137A9A88CA06D6CE0611A6FCBE9E4</string>
+				<string>6B25D71FB5B0EA94C2B3504B7F9B5273</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Assets</string>
+			<key>path</key>
+			<string>Assets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>7EF139226ADB31FC4439728C02B2A23C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>41D63D60F34517288096410F0D0189B8</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Resources</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>827D9D46F125D282CA997E7E2158518B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3E4E89230EF59BC255123B67864ACF77</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>82AAA85009122D717EB1E25A116CE6DD</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>NSBundle+ZJPhotoPod.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8459D746B6BF3DF6403582CA147A67A0</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>F5A5356285A279008F6C0CD043982F14</string>
+			<key>remoteInfo</key>
+			<string>ZJPhotoPod</string>
+		</dict>
+		<key>84B2CEEBF65E74F7A825E8C7AED68A9C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>82AAA85009122D717EB1E25A116CE6DD</string>
+				<string>E8B2C40941A3796FE73CCD9C1396B3A7</string>
+				<string>639872167C9C744DFB85148AFC6C4C06</string>
+				<string>E3689E73D0C365B0537099D5A8064D60</string>
+				<string>F900CE5F9C68BF713CA0EF123BAD671A</string>
+				<string>933EE947FD3D46CAD68E84711B44B779</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Classes</string>
+			<key>path</key>
+			<string>Classes</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>853073EC0F4B1436588ADBD59B10C387</key>
+		<dict>
+			<key>fileRef</key>
+			<string>036F033778565D59CC88F09DA882C176</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>859137A9A88CA06D6CE0611A6FCBE9E4</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>zh-Hans.lproj</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8673A5CCA2AACB0D48D65757BBEA7576</key>
+		<dict>
+			<key>fileRef</key>
+			<string>5AE343AE59B9565AEE7EB0525DCA0C16</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>883B6FBBC6BF0B9055C25A3A9B64FDCD</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>890E0555BBC549A87FD1881CE4DE52F6</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Pods-ZJPhotoPod_Example-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8CD8FE01588D5030D70B6F9EE858349E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ZJPhotoPod-umbrella.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8CEC855EDE2076CFE750CAF5E3730837</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8D4666748EAB84D057C1D7B7175CDD04</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Pods-ZJPhotoPod_Tests-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8D7294E57031A3FBB59AA031B01B427C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>75B8F07AFF0DAE60495A0B9D2963980C</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8E7726DBF279CD438C555F263B0D8F17</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ELCAlbumPickerController.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8F839702F4615D48950F404EC8D51BCC</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>Pods_ZJPhotoPod_Tests.framework</string>
+			<key>path</key>
+			<string>Pods_ZJPhotoPod_Tests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>933EE947FD3D46CAD68E84711B44B779</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B222C1A0CF0A61D579FE62C770A1CBD5</string>
+				<string>036F033778565D59CC88F09DA882C176</string>
+				<string>5AE343AE59B9565AEE7EB0525DCA0C16</string>
+				<string>4794E30A37BB1C35E736E382321D44FB</string>
+				<string>0B3DF35C258DB596C969F6E843F23DD2</string>
+				<string>B266449B01FCA19A9351368B347529C0</string>
+				<string>4AA8C31801CD5F7A227D58D905E843BF</string>
+				<string>59BE67DBF3F1FC319C0713A25467DD89</string>
+				<string>67E31429E68C254A819956CBBB47A720</string>
+				<string>37B3AA6B43072E8DFF321932447B3F82</string>
+				<string>4F5382E40A153F38FA0BCEAF2B4268BF</string>
+				<string>F832AABBCD3BFD2E7918B55A3D4477BF</string>
+				<string>2647BA50A0A3B5ABF4C777760158CFE0</string>
+				<string>FC974AB33ABC11DD9CA2210332CF7403</string>
+				<string>6264F469AF3375539B2247D5F13D0528</string>
+				<string>3D2C9F1F11653DCFAA63EF8024289CC3</string>
+				<string>75B8F07AFF0DAE60495A0B9D2963980C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ELCImagePicker</string>
+			<key>path</key>
+			<string>ELCImagePicker</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>93BBD95589FA99195BE34C6A3B228E41</key>
+		<dict>
+			<key>fileRef</key>
+			<string>67E31429E68C254A819956CBBB47A720</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>9495ABF4D32E1E03632A99DC98EAD8F6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0B3DF35C258DB596C969F6E843F23DD2</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>9AA28A634B923BE199C3FD7DCEF81D04</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D18655C9EB39561E1063F9A8B1A3447F</string>
+				<string>41B04BE55AD6CB873CE85F4B9E269B80</string>
+				<string>071E5352312DAE533072E03E67AE0E97</string>
+				<string>890E0555BBC549A87FD1881CE4DE52F6</string>
+				<string>006CCBA222774C19C1DBF08D3D77CF21</string>
+				<string>2CE17367FDEC34BC215D530AB08587FA</string>
+				<string>9ED1B1EC9EEC37551FD8BED2CB2C4708</string>
+				<string>124403A0F1FACB31A618FA6BD26FFED8</string>
+				<string>F7B8D3B99A5C46D1F5A2B6F47DB430D2</string>
+				<string>4FD24EDDCB0DBBD141D5AB5637339112</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-ZJPhotoPod_Example</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-ZJPhotoPod_Example</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9AE3C468FC06E5EC48201607CF67AD37</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>84B2CEEBF65E74F7A825E8C7AED68A9C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pod</string>
+			<key>path</key>
+			<string>Pod</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9C1CC68FFA1EECD164A8D8751BA5EEA2</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>16747352E1B350FF14CA3E19C49377B9</string>
+				<string>B9B32DCCA0D788221AB79422E6D12E90</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>9CAFCB4A9073A386F9C86DB9BD6D368E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4794E30A37BB1C35E736E382321D44FB</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9CEC61578627384CD0916497ED4E74FB</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ZJPhotoPod-prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9ED1B1EC9EEC37551FD8BED2CB2C4708</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-ZJPhotoPod_Example-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>A287316AB18BCF8FB60F4E5C2CF153A0</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4AA8C31801CD5F7A227D58D905E843BF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>A5D18216BFE21E9795BC876F8B3A7510</key>
+		<dict>
+			<key>fileRef</key>
+			<string>FD0C9F4EB56B30C64A640DEC4A85BA96</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A934E5EE0F03B0B28FA5CEAE51397F24</key>
+		<dict>
+			<key>fileRef</key>
+			<string>CA00C2D2FDA39C30AEF5410DE0BCDCD1</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>A95EB63A15A03BC8C8364D5A4FFA26EB</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>A9970F021939E1758E81AE84F6B0568F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ZJPhotoPod-dummy.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AA878CA06301CA56012FD34089A6AF55</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>ZJPhotoPod</string>
+			<key>target</key>
+			<string>F5A5356285A279008F6C0CD043982F14</string>
+			<key>targetProxy</key>
+			<string>8459D746B6BF3DF6403582CA147A67A0</string>
+		</dict>
+		<key>B222C1A0CF0A61D579FE62C770A1CBD5</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ELCAlbumPickerController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B22BC976D862C71A43BAECBCEA640EAE</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>name</key>
+			<string>ZJPhotoPod.framework</string>
+			<key>path</key>
+			<string>ZJPhotoPod.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>B266449B01FCA19A9351368B347529C0</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ELCAssetCell.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B3296C9966AFF2EC283F499C92C6435D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BC51D834220C427BB4AA9BB4F40B8E98</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Development Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>B547B46F280C76A2BA9566925AF00A59</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>0D20367B105DDF0F49518A56A5EB2F51</string>
+				<string>BF6E0990EBB6340D68474F2642626243</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>B5BA91F0123B987872364017BC013E8A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>0E300D5413F2EAC90F4A387AFCC02657</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>B9B32DCCA0D788221AB79422E6D12E90</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>5FAB22A035653ABA09228B099EB0B4E2</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-ZJPhotoPod_Tests/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-ZJPhotoPod_Tests/Pods-ZJPhotoPod_Tests.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_ZJPhotoPod_Tests</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>BA6428E9F66FD5A23C0A2E06ED26CD2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>Podfile</string>
+			<key>path</key>
+			<string>../Podfile</string>
+			<key>sourceTree</key>
+			<string>SOURCE_ROOT</string>
+			<key>xcLanguageSpecificationIdentifier</key>
+			<string>xcode.lang.ruby</string>
+		</dict>
+		<key>BB93C64A55B9DA7E372140166C325EA7</key>
+		<dict>
+			<key>fileRef</key>
+			<string>467692535A1B08AC5B835DFF89F75866</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BBD005253AEFA34EABF2FB9A1065A569</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-ZJPhotoPod_Tests-frameworks.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BC3CA7F9E30CC8F7E2DD044DD34432FC</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>BF6342C8B29F4CEEA088EFF7AB4DE362</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BC51D834220C427BB4AA9BB4F40B8E98</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9AE3C468FC06E5EC48201607CF67AD37</string>
+				<string>7EF139226ADB31FC4439728C02B2A23C</string>
+				<string>ED9E46417FEDD963EDE3D6B925ECAB50</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ZJPhotoPod</string>
+			<key>path</key>
+			<string>../..</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BC6A095FB5726EB733463716CB1E2A90</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D88184CC68E71C40039FC6766BB9DECA</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>BF55122084DF0D7640DB4A07C6098A9A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>2647BA50A0A3B5ABF4C777760158CFE0</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>BF6342C8B29F4CEEA088EFF7AB4DE362</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3E4E89230EF59BC255123B67864ACF77</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>iOS</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BF6E0990EBB6340D68474F2642626243</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>4FD24EDDCB0DBBD141D5AB5637339112</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/Pods-ZJPhotoPod_Example/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MACH_O_TYPE</key>
+				<string>staticlib</string>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/Pods-ZJPhotoPod_Example/Pods-ZJPhotoPod_Example.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>OTHER_LDFLAGS</key>
+				<string></string>
+				<key>OTHER_LIBTOOLFLAGS</key>
+				<string></string>
+				<key>PODS_ROOT</key>
+				<string>$(SRCROOT)</string>
+				<key>PRODUCT_NAME</key>
+				<string>Pods_ZJPhotoPod_Example</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>C7E5BED0A244D23FB6513FC4AD3BBCBF</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>D41D8CD98F00B204E9800998ECF8427E</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>F5A5356285A279008F6C0CD043982F14</string>
+			<key>remoteInfo</key>
+			<string>ZJPhotoPod</string>
+		</dict>
+		<key>C9BAB94FC52CB4F3A6C8A6092F746854</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>F45B795D5C7F25E3A448A254842FBF86</string>
+				<string>015B7EB715FB5F0311200CD14F848740</string>
+				<string>7CB7DF0C4084F7ECF41ADA7050BB4F36</string>
+				<string>5D90B48977C243DE7385540FCB560C00</string>
+				<string>8D4666748EAB84D057C1D7B7175CDD04</string>
+				<string>BBD005253AEFA34EABF2FB9A1065A569</string>
+				<string>EE1DAF8D24C49C4847CA2B4DB16436AF</string>
+				<string>6F85D5C01A9A6D95C17550987D518893</string>
+				<string>D472ADD2A0CD76FDF24CC8ED9E9E9560</string>
+				<string>5FAB22A035653ABA09228B099EB0B4E2</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods-ZJPhotoPod_Tests</string>
+			<key>path</key>
+			<string>Target Support Files/Pods-ZJPhotoPod_Tests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CA00C2D2FDA39C30AEF5410DE0BCDCD1</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>OverlaySelectNormal@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>CB36A758C6F5F2A605BA3B20988C8F18</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>4F3A5B84F3437CC7C520A0F3223C8AFA</string>
+				<string>8673A5CCA2AACB0D48D65757BBEA7576</string>
+				<string>9495ABF4D32E1E03632A99DC98EAD8F6</string>
+				<string>A287316AB18BCF8FB60F4E5C2CF153A0</string>
+				<string>173A6CD674D63B230C74660ED727FE11</string>
+				<string>93BBD95589FA99195BE34C6A3B228E41</string>
+				<string>F2225DBF8521E36B0E6A86020469F51C</string>
+				<string>BF55122084DF0D7640DB4A07C6098A9A</string>
+				<string>576E4E44D45FCDF2CF5C6DDAB2D75599</string>
+				<string>E6B0CF9AE3FC1C258D3EB76109DBE37D</string>
+				<string>D53394F51DBD6E52D581B3208D0A91A2</string>
+				<string>58692287EDBB7000A658B2148374DD17</string>
+				<string>670F8B7F84F0F7600CDBB8EDB840AD78</string>
+				<string>1AF4C6E44065620CDA99DD7727B97F90</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D18655C9EB39561E1063F9A8B1A3447F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D41D8CD98F00B204E9800998ECF8427E</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastSwiftUpdateCheck</key>
+				<string>0700</string>
+				<key>LastUpgradeCheck</key>
+				<string>0700</string>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>2D8E8EC45A3A1A1D94AE762CB5028504</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>7DB346D0F39D3F0E887471402A8071AB</string>
+			<key>productRefGroup</key>
+			<string>09DA94315ADF4029C863853D81803C71</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>3DB8C76CC495C42111EBA79116C41C42</string>
+				<string>EABD4562C1CE8D165A869C89E79B88A3</string>
+				<string>F5A5356285A279008F6C0CD043982F14</string>
+				<string>6524DC67F079725E6A5EB2C1EFFDAB4F</string>
+			</array>
+		</dict>
+		<key>D45B94B189158428C600DA58CA38B56C</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>1EE2827CD27679DF2425754E8AF37212</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>CURRENT_PROJECT_VERSION</key>
+				<string>1</string>
+				<key>DEFINES_MODULE</key>
+				<string>YES</string>
+				<key>DYLIB_COMPATIBILITY_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_CURRENT_VERSION</key>
+				<string>1</string>
+				<key>DYLIB_INSTALL_NAME_BASE</key>
+				<string>@rpath</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Target Support Files/ZJPhotoPod/ZJPhotoPod-prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Target Support Files/ZJPhotoPod/Info.plist</string>
+				<key>INSTALL_PATH</key>
+				<string>$(LOCAL_LIBRARY_DIR)/Frameworks</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<array>
+					<string>$(inherited)</string>
+					<string>@executable_path/Frameworks</string>
+					<string>@loader_path/Frameworks</string>
+				</array>
+				<key>MODULEMAP_FILE</key>
+				<string>Target Support Files/ZJPhotoPod/ZJPhotoPod.modulemap</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>PRODUCT_NAME</key>
+				<string>ZJPhotoPod</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VERSIONING_SYSTEM</key>
+				<string>apple-generic</string>
+				<key>VERSION_INFO_PREFIX</key>
+				<string></string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>D472ADD2A0CD76FDF24CC8ED9E9E9560</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-ZJPhotoPod_Tests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D4938F8E2FF77E463663EE6431A98144</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>2BC47E9708E8B10AC61568697FA0BAA5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>D53394F51DBD6E52D581B3208D0A91A2</key>
+		<dict>
+			<key>fileRef</key>
+			<string>82AAA85009122D717EB1E25A116CE6DD</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>D58FC86C03B2365A594A84A02976490B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>6CAAC34B7D534C6A1AE33CEA099DFF76</string>
+				<string>D45B94B189158428C600DA58CA38B56C</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>D7D1B0074A722BF9100D375993B85947</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>ZJPhotoPod</string>
+			<key>target</key>
+			<string>F5A5356285A279008F6C0CD043982F14</string>
+			<key>targetProxy</key>
+			<string>C7E5BED0A244D23FB6513FC4AD3BBCBF</string>
+		</dict>
+		<key>D88184CC68E71C40039FC6766BB9DECA</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Overlay@2x.png</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E3689E73D0C365B0537099D5A8064D60</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ZJTakePhotoActionSheet.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E6B0CF9AE3FC1C258D3EB76109DBE37D</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3D2C9F1F11653DCFAA63EF8024289CC3</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>E6DAD0DAADBDF5522739AE947B555468</key>
+		<dict>
+			<key>fileRef</key>
+			<string>124403A0F1FACB31A618FA6BD26FFED8</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>E8B2C40941A3796FE73CCD9C1396B3A7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>NSBundle+ZJPhotoPod.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>E9023F7515DD589315C16AFD3FF7A9E1</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>853073EC0F4B1436588ADBD59B10C387</string>
+				<string>9CAFCB4A9073A386F9C86DB9BD6D368E</string>
+				<string>6CEA66EDD76968BB02E68B785CA2E210</string>
+				<string>62A9AC8C65CFBD4846221AF461448B84</string>
+				<string>FB8D6120E598CA63AA1A0B31D2CC7B4F</string>
+				<string>1D5016B071D64F0CE020EC00EBFAB919</string>
+				<string>8D7294E57031A3FBB59AA031B01B427C</string>
+				<string>776F6448B7C6F4FE406AD234107EB47D</string>
+				<string>0F57BEC7BABB7C8218CC2EED8C53451C</string>
+				<string>0A12709D27791716E9B90D7109B45AB5</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>EABD4562C1CE8D165A869C89E79B88A3</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>9C1CC68FFA1EECD164A8D8751BA5EEA2</string>
+			<key>buildPhases</key>
+			<array>
+				<string>D4938F8E2FF77E463663EE6431A98144</string>
+				<string>3A829AE2DEF3C906E864E1365400E292</string>
+				<string>06EC12F6A9DC4EC1C56F1E15DBC6821F</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>AA878CA06301CA56012FD34089A6AF55</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Pods-ZJPhotoPod_Tests</string>
+			<key>productName</key>
+			<string>Pods-ZJPhotoPod_Tests</string>
+			<key>productReference</key>
+			<string>8F839702F4615D48950F404EC8D51BCC</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>ED9E46417FEDD963EDE3D6B925ECAB50</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>8CEC855EDE2076CFE750CAF5E3730837</string>
+				<string>445A2206898CBBF2EEE1DF821DE8566A</string>
+				<string>1EE2827CD27679DF2425754E8AF37212</string>
+				<string>A9970F021939E1758E81AE84F6B0568F</string>
+				<string>9CEC61578627384CD0916497ED4E74FB</string>
+				<string>8CD8FE01588D5030D70B6F9EE858349E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Support Files</string>
+			<key>path</key>
+			<string>Example/Pods/Target Support Files/ZJPhotoPod</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>EE1DAF8D24C49C4847CA2B4DB16436AF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.script.sh</string>
+			<key>path</key>
+			<string>Pods-ZJPhotoPod_Tests-resources.sh</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F149C29B7B6D6D245F9D76F4BFB2F48A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>name</key>
+			<string>ZJPhotoPod-ZJPhotoPod</string>
+			<key>target</key>
+			<string>6524DC67F079725E6A5EB2C1EFFDAB4F</string>
+			<key>targetProxy</key>
+			<string>5310E0D27E5B5A81BED80866F8D250AD</string>
+		</dict>
+		<key>F19288DE3E840DD85133F58F5DC19F2F</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.xib</string>
+			<key>path</key>
+			<string>ELCAssetPicker.xib</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F2225DBF8521E36B0E6A86020469F51C</key>
+		<dict>
+			<key>fileRef</key>
+			<string>4F5382E40A153F38FA0BCEAF2B4268BF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+			<key>settings</key>
+			<dict>
+				<key>ATTRIBUTES</key>
+				<array>
+					<string>Public</string>
+				</array>
+			</dict>
+		</dict>
+		<key>F45B795D5C7F25E3A448A254842FBF86</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F5A5356285A279008F6C0CD043982F14</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>D58FC86C03B2365A594A84A02976490B</string>
+			<key>buildPhases</key>
+			<array>
+				<string>E9023F7515DD589315C16AFD3FF7A9E1</string>
+				<string>3519C77FDCFA93A9B17764E0EE65BC48</string>
+				<string>08F01260DA83670CCEEA1446EDBD43FB</string>
+				<string>CB36A758C6F5F2A605BA3B20988C8F18</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>F149C29B7B6D6D245F9D76F4BFB2F48A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>ZJPhotoPod</string>
+			<key>productName</key>
+			<string>ZJPhotoPod</string>
+			<key>productReference</key>
+			<string>B22BC976D862C71A43BAECBCEA640EAE</string>
+			<key>productType</key>
+			<string>com.apple.product-type.framework</string>
+		</dict>
+		<key>F7B8D3B99A5C46D1F5A2B6F47DB430D2</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>path</key>
+			<string>Pods-ZJPhotoPod_Example.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F7BE64EC8F0AD0015726C07A5CE88D83</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>4E058CB001A0CA7D2780C690F892F318</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>F832AABBCD3BFD2E7918B55A3D4477BF</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ELCConsole.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>F900CE5F9C68BF713CA0EF123BAD671A</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ZJTakePhotoActionSheet.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FB8D6120E598CA63AA1A0B31D2CC7B4F</key>
+		<dict>
+			<key>fileRef</key>
+			<string>F832AABBCD3BFD2E7918B55A3D4477BF</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>FC974AB33ABC11DD9CA2210332CF7403</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>ELCImagePickerController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FD0C9F4EB56B30C64A640DEC4A85BA96</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>en.lproj</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>FDB2B2C15A54531464742B94D3D6935E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>006CCBA222774C19C1DBF08D3D77CF21</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>D41D8CD98F00B204E9800998ECF8427E</string>
+</dict>
+</plist>

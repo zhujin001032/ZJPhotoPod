@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "ZJPhotoPod"
-  s.version          = "0.1.0"
+  s.version          = "0.2.1"
   s.summary          = "拍照／相册选取图片"
 
 # This description is used to generate tags and improve search results.
@@ -31,8 +31,7 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
 s.source_files = 'Pod/Classes/**/*.{h,m}'
-  s.resource_bundles = {
-    'ZJPhotoPod' => ['Pod/Assets/*.png','Pod/Assets/*.xib']
+  s.resource_bundles = {'ZJPhotoPod' => ['Pod/Assets/*.{png,xib,lproj}']
   }
 
   s.public_header_files = 'Pod/Classes/**/*.h'

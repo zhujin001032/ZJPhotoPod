@@ -10,6 +10,9 @@
 #import "ELCAssetTablePicker.h"
 #import <MobileCoreServices/UTCoreTypes.h>
 
+#import "NSBundle+ZJPhotoPod.h"
+#define ZJPLocalizedString(key,comment) 	NSLocalizedStringFromTableInBundle((key), @"ZJPhotoPod", [NSBundle zjp_resourcesBundle], comment)
+
 @interface ELCAlbumPickerController ()
 
 @property (nonatomic, strong) ALAssetsLibrary *library;
@@ -27,8 +30,8 @@
 {
     [super viewDidLoad];
     [self.tableView setSeparatorStyle:UITableViewCellSeparatorStyleNone];
-	
-	[self.navigationItem setTitle:NSLocalizedString(@"Loading...", nil)];
+
+	[self.navigationItem setTitle:ZJPLocalizedString(@"Loading...", nil)];
 
     UIBarButtonItem *cancelButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self.parent action:@selector(cancelImagePicker)];
 	[self.navigationItem setRightBarButtonItem:cancelButton];
@@ -70,12 +73,12 @@
             void (^assetGroupEnumberatorFailure)(NSError *) = ^(NSError *error) {
               
                 if ([ALAssetsLibrary authorizationStatus] == ALAuthorizationStatusDenied) {
-                    NSString *errorMessage = NSLocalizedString(@"This app does not have access to your photos or videos. You can enable access in Privacy Settings.", nil);
-                    [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Access Denied", nil) message:errorMessage delegate:nil cancelButtonTitle:NSLocalizedString(@"Ok", nil) otherButtonTitles:nil] show];
+                    NSString *errorMessage = ZJPLocalizedString(@"This app does not have access to your photos or videos. You can enable access in Privacy Settings.", nil);
+                    [[[UIAlertView alloc] initWithTitle:ZJPLocalizedString(@"Access Denied", nil) message:errorMessage delegate:nil cancelButtonTitle:ZJPLocalizedString(@"Ok", nil) otherButtonTitles:nil] show];
                   
                 } else {
                     NSString *errorMessage = [NSString stringWithFormat:@"Album Error: %@ - %@", [error localizedDescription], [error localizedRecoverySuggestion]];
-                    [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", nil) message:errorMessage delegate:nil cancelButtonTitle:NSLocalizedString(@"Ok", nil) otherButtonTitles:nil] show];
+                    [[[UIAlertView alloc] initWithTitle:ZJPLocalizedString(@"Error", nil) message:errorMessage delegate:nil cancelButtonTitle:ZJPLocalizedString(@"Ok", nil) otherButtonTitles:nil] show];
                 }
 
                 [self.navigationItem setTitle:nil];
@@ -106,7 +109,7 @@
 - (void)reloadTableView
 {
 	[self.tableView reloadData];
-	[self.navigationItem setTitle:NSLocalizedString(@"Select an Album", nil)];
+	[self.navigationItem setTitle:ZJPLocalizedString(@"Select an Album", nil)];
 
 }
 

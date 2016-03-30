@@ -1,0 +1,36 @@
+/* 
+  ZJPhotoPod.strings
+  Pods
+
+  Created by 何助金 on 16/3/17.
+
+*/
+"Choose from the album" = "Choose from the album";
+
+"Taking pictures" = "Taking pictures";
+
+"Cancel" = "Cancel";
+
+"Loading..." = "Loading...";
+
+"This app does not have access to your photos or videos. You can enable access in Privacy Settings." = "This app does not have access to your photos or videos. You can enable access in Privacy Settings.";
+
+"Access Denied" = "Access Denied";
+
+"Ok" =  "Ok";
+
+"Album Error: %@ - %@" = "Album Error: %@ - %@";
+
+"Error" = "Error";
+
+"Select an Album" = "Select an Album";
+
+"Pick Photo" = "Pick Photo";
+
+"Pick Photos" = "Pick Photos";
+
+"Only %d photos please!" = "Only %d photos please!";
+
+"You can only send %d photos at a time." = "You can only send %d photos at a time.";
+
+"Sure" = "Sure";

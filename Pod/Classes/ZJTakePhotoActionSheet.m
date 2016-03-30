@@ -9,6 +9,8 @@
 #import "ZJTakePhotoActionSheet.h"
 #import <AssetsLibrary/AssetsLibrary.h>
 #import <MobileCoreServices/UTCoreTypes.h>
+#import "NSBundle+ZJPhotoPod.h"
+#define ZJPLocalizedString(key,comment) 	NSLocalizedStringFromTableInBundle((key), @"ZJPhotoPod", [NSBundle zjp_resourcesBundle], comment)
 
 @implementation ZJTakePhotoActionSheet
 
@@ -17,29 +19,13 @@
     self = [super init];
     if (self)
     {
-        /**
-         *  @author Jason He, 15-10-15
-         *
-         *  @brief  语言设置
-         */
-        
-//        NSArray *languages = [NSLocale preferredLanguages];
-//        NSString *currentLanguage = [languages objectAtIndex:0];
-//        NSLog ( @"%@" , currentLanguage);
-//        if([currentLanguage isEqualToString:@"zh-Hant-HK"] || [currentLanguage hasPrefix:@"zh-Hant"])
-//        {
-//            [self addButtonWithTitle:NSLocalizedString(@"從相冊選擇", nil)];
-//            [self addButtonWithTitle:NSLocalizedString(@"拍照", nil)];
-//            NSInteger cancleButtonIndex = [self addButtonWithTitle:NSLocalizedString(@"取消", nil)];
-//            [self setCancelButtonIndex:cancleButtonIndex];
-//
-//        }else
-//        {
-            [self addButtonWithTitle:NSLocalizedString(@"Choose from the album", nil)];
-            [self addButtonWithTitle:NSLocalizedString(@"Taking pictures", nil)];
-            NSInteger cancleButtonIndex = [self addButtonWithTitle:NSLocalizedString(@"Cancel", nil)];
-            [self setCancelButtonIndex:cancleButtonIndex];
-//        }
+ 
+
+    [self addButtonWithTitle:ZJPLocalizedString(@"Choose from the album", nil)];
+    [self addButtonWithTitle:ZJPLocalizedString(@"Taking pictures", nil)];
+        NSInteger cancleButtonIndex = [self addButtonWithTitle:ZJPLocalizedString(@"Cancel", nil)];
+        [self setCancelButtonIndex:cancleButtonIndex];
+
         
         self.delegate = self;
         

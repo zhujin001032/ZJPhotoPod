@@ -11,6 +11,8 @@
 #import "ELCAlbumPickerController.h"
 #import "ELCConsole.h"
 #define kSCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#import "NSBundle+ZJPhotoPod.h"
+#define ZJPLocalizedString(key,comment) 	NSLocalizedStringFromTableInBundle((key), @"ZJPhotoPod", [NSBundle zjp_resourcesBundle], comment)
 
 @interface ELCAssetTablePicker ()
 
@@ -46,7 +48,7 @@
     } else {
         UIBarButtonItem *doneButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(doneAction:)];
         [self.navigationItem setRightBarButtonItem:doneButtonItem];
-        [self.navigationItem setTitle:NSLocalizedString(@"Loading...", nil)];
+        [self.navigationItem setTitle:ZJPLocalizedString(@"Loading...", nil)];
     }
 
 	[self performSelectorInBackground:@selector(preparePhotos) withObject:nil];
@@ -119,10 +121,8 @@
                                               atScrollPosition:UITableViewScrollPositionBottom
                                                       animated:NO];
             }
-            // Modify by Mark 2015-08-22
-            [self.navigationItem setTitle:self.singleSelection ? NSLocalizedString(@"Pick Photo", nil) : NSLocalizedString(@"Pick Photos", nil)];
-//            [self.navigationItem setTitle:self.singleSelection ? @"选取图片" : @"选取图片"];
-            // End Modify
+
+            [self.navigationItem setTitle:self.singleSelection ? ZJPLocalizedString(@"Pick Photo", nil) : ZJPLocalizedString(@"Pick Photos", nil)];
         });
     }
 }

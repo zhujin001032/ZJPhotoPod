@@ -10,6 +10,7 @@
 #import "ELCImagePickerController.h"
 #import "ELCImagePickerHeader.h"
 #import "ELCOverlayImageView.h"
+#import "NSBundle+ZJPhotoPod.h"
 #import "ZJPhoto.h"
 #import "ZJTakePhotoActionSheet.h"
 

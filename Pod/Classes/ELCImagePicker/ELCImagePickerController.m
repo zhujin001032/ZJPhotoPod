@@ -14,6 +14,8 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MobileCoreServices/UTCoreTypes.h>
 #import "ELCConsole.h"
+#import "NSBundle+ZJPhotoPod.h"
+#define ZJPLocalizedString(key,comment) 	NSLocalizedStringFromTableInBundle((key), @"ZJPhotoPod", [NSBundle zjp_resourcesBundle], comment)
 
 @implementation ELCImagePickerController
 
@@ -71,13 +73,13 @@
 {
     BOOL shouldSelect = previousCount < self.maximumImagesCount;
     if (!shouldSelect) {
-        NSString *title = [NSString stringWithFormat:NSLocalizedString(@"Only %d photos please!", nil), self.maximumImagesCount];
-        NSString *message = [NSString stringWithFormat:NSLocalizedString(@"You can only send %d photos at a time.", nil), self.maximumImagesCount];
+        NSString *title = [NSString stringWithFormat:ZJPLocalizedString(@"Only %d photos please!", nil), self.maximumImagesCount];
+        NSString *message = [NSString stringWithFormat:ZJPLocalizedString(@"You can only send %d photos at a time.", nil), self.maximumImagesCount];
         [[[UIAlertView alloc] initWithTitle:title
                                     message:message
                                    delegate:nil
                           cancelButtonTitle:nil
-                          otherButtonTitles:NSLocalizedString(@"Sure",nil), nil] show];
+                          otherButtonTitles:ZJPLocalizedString(@"Sure",nil), nil] show];
     }
     return shouldSelect;
 }

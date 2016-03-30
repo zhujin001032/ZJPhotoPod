@@ -1,0 +1,36 @@
+/* 
+  ZJPhotoPod.strings
+  Pods
+
+  Created by 何助金 on 16/3/17.
+
+*/
+"Choose from the album" = "从相册选择";
+
+"Taking pictures" = "拍照";
+
+"Cancel" = "取消";
+
+"Loading..." = "加载中...";
+
+"This app does not have access to your photos or videos. You can enable access in Privacy Settings." = "此应用无法访问您的照片或视频。 你可以在隐私设置中允许应用程序获得权限。";
+
+"Access Denied" = "拒绝访问";
+
+"Ok" =  "好的";
+
+"Album Error: %@ - %@" = "相册出错: %@ - %@";
+
+"Error" = "错误";
+
+"Select an Album" = "选择一个相册";
+
+"Pick Photo" = "挑选照片";
+
+"Pick Photos" = "挑选照片";
+
+"Only %d photos please!" = "最多只能选 %d 张照片!";
+
+"You can only send %d photos at a time." = "您只能一次发送%d张照片。";
+
+"Sure" = "确定";
